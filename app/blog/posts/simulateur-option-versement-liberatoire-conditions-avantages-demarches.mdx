@@ -1,0 +1,177 @@
+import {
+    CustomImg,
+    GoToSimulatorButton,
+    InnerLink,
+    Underline,
+    UnderlineP,
+    Callout,
+    CenteredInfoLink
+} from '../reusable-components'
+
+import urssafWitholdingsVFL from '@/public/prelevement-urssaf-vfl.png'
+import VFLOptionGif from '@/public/vfl-option.gif'
+
+export const meta = {
+    title: 'Simulateur d’option pour le Versement Libératoire : est-ce avantageux ? Comment opter ?',
+    articleTitle:
+        'Le Versement Libératoire (ou VFL) : est-ce avantageux ? Quelles conditions remplir ? Comment opter ? Faites une simulation',
+    outsideTitle: "Le Versement Libératoire (ou VFL) : est-ce avantageux ? Quelles conditions remplir ? Comment opter ?",
+    subtitle: (
+        <>
+            <p>
+                Les Micro-Entrepreneurs peuvent bénéficier d’un faible taux
+                d&apos;imposition et de modalités simplifiées de paiement de
+                l&apos;impôt en optant pour le Versement Forfaitaire Libératoire
+                (VFL).{' '}
+                <span className='font-bold text-inherit'>
+                    Quelles sont les conditions ? Comment opter ? Est-ce
+                    intéressant ? Quel impact sur mon impôt et celui de mon
+                    conjoint ?
+                </span>{' '}
+                Vous trouverez des réponses à ces questions dans cet article.
+            </p>
+            <p className='italic font-semibold extra-intro-p'>
+                Attention : si le Versement Forfaitaire Libératoire permet bien
+                souvent d’économiser de l’impôt, l&apos;option pour le Versement
+                Forfaitaire Libératoire n’est pas toujours avantageuse ! Il est
+                vivement recommandé d’
+                <InnerLink>effectuer une simulation</InnerLink> pour déterminer si
+                l’option est intéressante pour vous.
+            </p>
+        </>
+    ),
+    date: '19/09/2023',
+    description:
+        "Simulez votre revenu net avec et sans le Versement Libératoire et obtenez les informations essentielles sur le Versement Libératoire (conditions, intérêt à opter, démarches).",
+    keywords: [
+        'VFL',
+        'prélèvement',
+        'revenu',
+        'référence',
+        'aide',
+        'option',
+        'urssaf',
+    ],
+    socialFormsArr: ['ME'],
+    topicalRanking: 3
+}
+
+## Qu’est-ce que le Versement Libératoire (VFL) ?
+
+Le Versement Libératoire permet aux Micro-Entrepreneurs d’**acquitter l’impôt en même temps et de la même manière que les cotisations sociales**.
+
+En plus de payer des cotisations sociales à l’Urssaf à hauteur d’un pourcentage fixe de son chiffre d’affaires, **le Micro-Entrepreneur ayant opté pour le Versement Forfaitaire Libératoire s’acquittera également de son impôt auprès de l’Urssaf, à hauteur de quelques pour cent supplémentaires**.
+
+En cas d'option pour le Versement Libératoire, les versements effectués à l'Urssaf libèrent définitivement le Micro-Entrepreneur au niveau de l'<InnerLink href="/blog/tout-comprendre-a-l-impot-sur-le-revenu-ir-avec-simulation">Impôt sur le Revenu (IR)</InnerLink>. Les prélèvements à la source s'arrêtent également.
+
+Voici les montants d'impôt à payer en cas d’option pour le Versement libératoire (en pourcentage de chiffre d’affaires) :
+
+-   **1%** pour les activités d’achat-revente et de restauration
+-   **2.2%** pour les activités “libérales” (BNC)
+-   **1.7%** pour les autres activités de services
+
+Le tableau suivant représente l’intégralité des prélèvements (cotisations + impôts) du Micro-Entrepreneur ayant opté pour le Versement Forfaitaire Libératoire.
+
+<CustomImg
+    src={urssafWitholdingsVFL}
+    alt="Montant total des échéances dues à l'Urssaf en cas d'option pour le VFL"
+/>
+
+L’impôt ainsi payé étant libératoire, il n’y a **aucune régularisation possible l’année suivante** : plus rien n’est dû, et rien ne peut être restitué.
+
+## Quelles sont les conditions à remplir pour bénéficier du Versement Forfaitaire Libératoire ?
+
+Pour opter pour le Versement Forfaitaire Libératoire, il faut tout d’abord être **Micro-Entrepreneur**, et respecter [les conditions du régime](https://www.economie.gouv.fr/entreprises/regime-micro-entrepreneur-auto-entrepreneur).
+
+L’autre condition est liée au montant annuel des revenus de votre foyer. Pour pouvoir opter pour le Versement Forfaitaire Libératoire en année N (par exemple, l’année de la création), **le <Underline>revenu fiscal de référence par part de quotient familial</Underline> de l’année N-2 ne doit pas dépasser 27 478 €.** Ce montant correspond à la deuxième tranche du barème de l’impôt sur le revenu l’année de l’option.
+
+<Callout className="smaller-font-container">
+**Qu’est-ce que le revenu fiscal de référence ?**  Le revenu fiscal de référence est un montant calculé par l’administration fiscale, censé refléter total des gains du foyer sur une année donnée.
+
+Pour déterminer le revenu fiscal de référence, il faut en général partir du revenu net imposable du foyer et y ajouter deux types de sommes :
+- Certains revenus taxés à taux fixe (comme les dividendes)
+- Certaines sommes déduites pour le calcul de l’impôt sur le revenu, mais non déductibles du revenu fiscal de référence (comme les versements effectués sur un Plan d’Epargne Retraite)
+
+<CenteredInfoLink>
+    [Plus
+    d’informations](https://bofip.impots.gouv.fr/bofip/5934-PGP.html/identifiant%3DBOI-IF-TH-10-50-30-20-20150320#Definition_du_revenu_fiscal_11:~:text=3%2C4%20%25%20des%20revenus.-,a.%20Calcul%20du%20revenu%20fiscal%20de%20r%C3%A9f%C3%A9rence,-100)
+</CenteredInfoLink>
+
+</Callout>
+
+**Vous trouverez le revenu fiscal de référence ainsi que le nombre de parts de votre foyer fiscal sur la première page de votre avis d’impôt sur le revenu.** Comme l'année prise en compte est l'année N-2, il faut prendre l'avis d'impôt des revenus de l'année N-2, reçu en année N-1.
+
+Pour savoir si vous êtes éligible au VFL, vous devez **diviser le revenu fiscal de référence par le nombre de parts**. Pour une option en 2023, vous êtes éligible si ce montant est inférieur à **27 478 €**.
+
+## Comment opter pour le Versement Forfaitaire Libératoire ?
+
+Il y a deux moments possibles pour opter pour le Versement Forfaitaire Libératoire.
+
+### L’option l’année de création d’une Micro-Entreprise
+
+Il est possible d’opter pour le Versement Forfaitaire Libératoire **pendant la création Micro-Entreprise**, via une case de formulaire prévue à cet effet.
+
+Si vous avez **déjà créé votre Micro-Entreprise** et que vous souhaitez opter, vous avez **jusqu’au dernier jour du quatrième mois calendaire écoulé depuis la création de votre Micro-Entreprise.** L’option se fait sur [autoentrepreneur.urssaf.fr](https://www.autoentrepreneur.urssaf.fr/) (le site de l’Urssaf qui gère les cotisations sociales de Micro-Entrepreneur).
+
+### L’option à un autre moment
+
+Si votre Micro-Entreprise existe depuis un certain temps et que vous n’êtes pas (ou plus) soumis au Versement Forfaitaire Libératoire, vous avez **jusqu’au 30 septembre pour demander à être soumis au Versement Forfaitaire Libératoire pour les revenus de l’année suivante**.
+
+L’option se fait sur le site [autoentrepreneur.urssaf.fr](https://www.autoentrepreneur.urssaf.fr/).
+
+## Faut-il opter pour le Versement Libératoire ou rester en imposition classique ?
+
+### Le Versement Libératoire permet de payer peu d'impôts
+
+L'option pour le Versement Libératoire est souvent très avantageuse car **elle permet d'acquitter un faible montant d'impôt** (quelques pour cent de chiffre d'affaires).
+
+Lorsqu'un Micro-Entrepreneur **cumule le VFL avec l'<InnerLink href='/blog/tout-comprendre-a-l-acre-test-d-eligibilite-simulation-conditions-demarches'>Acre</InnerLink>**, le taux global de l'imposition (cotisations + impôts) ne s'élève qu'à **12.3% pour une activité de service** et **7.15% pour une activité d'achat-revente**, ce qui est très faible.
+
+
+### Quand faut-il opter pour le Versement Libératoire (VFL) ?
+
+**Il ne faut opter que si l'impôt avec Versement Libératoire est plus faible que l'impôt classique**.
+
+Il y a donc des cas où le Versement libératoire n'est pas avantageux car il est plus élevé que l'impôt classique.
+
+C'est le cas du Micro-Entrepreneur dont le <InnerLink href="/blog/tout-comprendre-a-l-impot-sur-le-revenu-ir-avec-simulation">foyer fiscal n'est pas ou quasiment pas imposable</InnerLink> (ex : faibles revenus des membres du foyer, nombre élevé de parts de quotient familial). **Si il exerce l'option alors qu'il n'y avait pas intérêt, le Micro-Entrepreneur perd alors inutilement le pourcentage versé à l'Urssaf correspondant au Versement Forfaitaire Libératoire.**
+
+### Exemples chiffrés
+
+<UnderlineP>Exemple n°1 - Le cas du Micro-Entrepreneur célibataire</UnderlineP>
+
+Prenons le cas d'un Micro-Entrepreneur célibataire et sans enfant qui réalise des prestations de service (chauffeur VTC) et génère 35 000 € de chiffre d'affaires annuel. Son revenu imposable est de 17 500 €, une fois appliqué l'abattement de 50%. Une fois qu'on <InnerLink href="/blog/tout-comprendre-a-l-impot-sur-le-revenu-ir-avec-simulation"> calcule l'Impôt sur le Revenu (IR)</InnerLink>, on obtient **un montant d'impôt de 241 €**. Si il avait opté pour le Versement Forfaitaire Libératoire, il aurait payé 1.7% de son chiffre d'affaires en impôt, ce qui représente 595 €.
+
+**Dans la situation de ce Micro-Entrepreneur, l'option n'est pas avantageuse.** Elle n'est intéressante qu'à partir de 40 500 € de chiffre d'affaires annuel.
+
+<UnderlineP>Exemple n°2 - Le cas du Micro-Entrepreneur marié</UnderlineP>
+
+Complexifions les choses en prenant l'exemple d'un couple marié ayant un enfant, dont le mari exerce le métier de consultant en Micro-Entreprise avec 50 000 € de chiffre d'affaires annuel et la femme est salariée avec un salaire brut de 45 000 €.
+
+Le revenu imposable du couple s'élève à 66 210 € après application de l'abattement de 34% sur le chiffre d'affaires (profession libérale) et détermination du revenu net imposable de l'épouse. Dans ce cas, l'impôt dû par le Micro-Entrepreneur est de 2 678 €. S'il opte pour le Versement Libératoire, son impôt ne sera que de 1 100 € (2.2% de 50 000€).
+
+**Dans cet exemple, le Versement Libératoire est donc avantageux**.
+
+### Faites une simulation
+
+**Pour <Underline> vous assurer que l'option pour le Versement Forfaitaire Libératoire est intéressante pour vous</Underline>, nous avons justement élaboré un simulateur simple et intuitif, qui vous permettra de renseigner vos paramètres (Chiffre d'affaires, VFL, <InnerLink href="/blog/tout-comprendre-a-l-acre-test-d-eligibilite-simulation-conditions-demarches">ACRE</InnerLink>**, etc.), et de comparer les résultats avec et sans l'option.
+
+<CustomImg src={VFLOptionGif} className="w-[92%] max-w-[400px] mx-auto" alt="Gif illustrant l'utilisation du simulateur"/>
+
+<GoToSimulatorButton />
+
+## Comment sont imposés les autres revenus du foyer cas d’option pour le Versement Forfaitaire Libératoire ?
+
+En cas d'option pour le Versement Forfaitaire Libératoire, si votre foyer fiscal perçoit d’autres revenus (par exemple, ceux de votre conjoint), l'option pour le VFL n'aura **aucune conséquence sur l'imposition de ces revenus**.
+
+L’administration calcule en effet un taux appelé “taux effectif d’imposition” dans lequel le revenu net imposable du foyer est calculé selon le régime classique d'imposition de la Micro-Entreprise (avec l'abattement). Ceci permet d’obtenir le taux global d’imposition du foyer, qui sera appliqué à tous les revenus du foyer, mis à part le revenu de la Micro-Entreprise qui a déjà fait l’objet d’une imposition.
+
+**Il est donc probable que vous payiez (beaucoup) moins d'impôts que votre conjoint si vous optez pour le VFL**. Mais en pratique, votre conjoint ne sera pas "pénalisé" parce que vous avez opté, il devra le montant d'impôt normal qui aurait été dû si vous n'aviez pas opté. Libre à vous d'en prendre en charge une partie pour rééquilibrer les choses.
+
+## Comment l’option pour le Versement Forfaitaire Libératoire prend-elle fin ?
+
+Le Versement Forfaitaire Libératoire peut prendre fin de trois manières différentes :
+
+-   Le Micro-Entrepreneur peut **renoncer** au Versement Forfaitaire Libératoire dans les mêmes conditions qu’il peut opter (via [autoentrepreneur.urssaf.fr](https://www.autoentrepreneur.urssaf.fr/portail/accueil.html)) : cette renonciation doit intervenir avant le 30 septembre de l’année précédant celle au cours de laquelle il ne souhaite plus y être soumis.
+-   Lorsque **la condition tenant au montant du revenu fiscal de référence de l’année N-2 n’est plus remplie**, l’option pour le Versement Forfaitaire Libératoire **prend fin automatiquement.** Néanmoins, il convient de renoncer à l’option via [autoentrepreneur.urssaf.fr](https://www.autoentrepreneur.urssaf.fr/portail/accueil.html), afin de mettre à jour le montant exigé par l’Urssaf périodiquement.
+-   En cas de **perte du régime de la Micro-Entreprise** (passage au régime réel d'imposition ou radiation de la Micro-Entreprise), l’option pour le Versement Forfaitaire Libératoire **prend fin automatiquement** et vous ne devez plus déclarer et payer périodiquement vos cotisations sur le site autoentrepreneur.urssaf.fr.

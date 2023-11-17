@@ -1,0 +1,406 @@
+import {
+    CustomImg,
+    Callout,
+    GoToSimulatorButton,
+    InnerLink,
+    Underline,
+    CalculationLine,
+    BlueP,
+    OrangeH3
+} from '../reusable-components'
+import employeCompPensionScale from '@/public/bareme-retraite-comp-salaries.png'
+import TNSCompPensionScale from '@/public/bareme-retraite-comp-independants.png'
+import pensionGif from '@/public/retraite.gif'
+
+export const meta = {
+    title: 'Retraite du freelance - Guide complet par statut + simulateur',
+    outsideTitle: "Retraite du freelance - Guide complet",
+    articleTitle:
+        'Retraite du freelance - Guide complet par statut + simulateur',
+    subtitle: (
+        <>
+            <p>
+                Vous trouverez dans ce dossier tous les éléments permettant de comprendre et de calculer le montant de votre retraite, selon votre statut juridique.
+            </p>
+            <p className="italic font-semibold extra-intro-p">
+             Pour connaître le montant de votre retraite ou comparer la retraite selon les différents statuts juridiques disponibles, rendez-vous sur <InnerLink> notre simulateur</InnerLink> !
+            </p>
+        </>
+    ),
+    date: '11/10/2023',
+    description:
+        "Découvrez comment fonctionne la retraite du freelance par statut juridique et calculez votre retraite grâce à notre simulateur gratuit.",
+    keywords: [
+        'retraite',
+        'TNS',
+        'indépendant',
+        'trimestres',
+        'points',
+        'complémentaire',
+        'de base',
+        'pension',
+        'micro',
+        'SAS',
+        'SASU',
+        'SARL',
+        'EURL',
+        'Entreprise Individuelle',
+        'salariat'
+    ],
+    socialFormsArr: ['SAS', 'SARL', 'ME', 'EI'],
+    topicalRanking: 3
+}
+
+
+## Quelques notions pour comprendre la retraite (applicable aux freelances)
+
+### La retraite : de quoi parle-t-on ?
+
+Tous les travailleurs paient des cotisations de retraite afin de financer le système des retraites.
+
+Les cotisations de retraite peuvent avoir un **caractère obligatoire**, comme c’est le cas des cotisations à la retraite de base et à la retraite complémentaire, ou avoir un **caractère volontaire**, lorsqu’un assuré décide de verser des cotisations supplémentaires afin d’augmenter ses droits à la retraite.
+
+En France, la retraite obligatoire comporte **deux composantes** :
+
+- La **retraite de base**
+- La **retraite complémentaire**
+
+Ces deux composantes sont **gérées de manière distincte** : chaque année, les travailleurs paient des cotisations à la retraite de base et à la retraite complémentaire. Au moment de la retraite, **la retraite de base et la retraite complémentaire seront additionnées pour former le montant total de la pension de retraite.**
+
+### À quel âge un travailleur indépendant peut-il partir à la retraite ?
+
+Tout travailleur peut partir à la retraite à compter de l’âge légal, fixé à 62 ans en 2023. Toutefois, s’il souhaite avoir des droits à la retraite plus importants ou s’il ne bénéficie pas d’une retraite à taux plein, il peut préférer rester en activité plus longtemps.
+
+### Que signifie “avoir une retraite à taux plein”  ?
+
+Le **taux de retraite** correspond au nombre de trimestres validés par rapport au nombre minimum de trimestres à valider pour obtenir une retraite à taux plein. **En 2023, ce nombre minimum est fixé à 172 trimestres**, ce qui correspond à 43 années.
+
+<CalculationLine>Taux de retraite = nombre de trimestres validés / 172</CalculationLine>
+
+Pour avoir une retraite à taux plein, il faut en principe avoir validé 172 trimestres (pour savoir comment valider des trimestres, rendez-vous à la section suivante).
+
+Toutefois, les travailleurs qui atteignent l’**âge du taux plein** et qui n’ont pas validé le nombre requis de trimestres **bénéficient automatiquement d’une retraite à taux plein**. En 2023, cet âge est fixé à **67 ans**.
+
+### Le calcul de la retraite de base
+
+La retraite de base permet en principe de percevoir un montant égal à **50% du revenu annuel moyen des 25 années ayant enregistré les revenus les plus élevés**.
+
+Ce revenu annuel moyen ne peut dépasser le plafond annuel de la sécurité sociale, fixé à 43 992 € en 2023.
+
+Par ailleurs, les travailleurs n’ayant pas validé 172 trimestres ne toucheront pas la totalité de ce montant. En effet, le montant de la retraite de base peut être réduit par l’application des deux coefficients suivants :
+
+- **Le taux de retraite** : comme expliqué au paragraphe précédent, il correspond au rapport entre le nombre de trimestres validés et le nombre minimum de trimestres à valider pour bénéficier du taux plein
+- **Le nombre de trimestres manquants** : c’est le nombre de trimestres manquant au travailleur pour atteindre le nombre minimum de trimestres pour bénéficier du taux plein (172 trimestres en 2023)
+
+<CalculationLine isCentered={false}>**Retraite de base** = revenu moyen des 25 meilleures années x taux de retraite x trimestres validés / 172</CalculationLine>
+
+**Ainsi, une personne ayant atteint l’âge du taux plein automatique (67 ans) verra tout de même sa pension de retraite réduite par l’application du deuxième coefficient.**
+
+<Callout className="smaller-font-container">
+
+<p className="font-bold text-center mb-2">Qu’est-ce que la retraite minimum ?</p>
+
+Lorsqu’un retraité a des ressources cumulées inférieures à un certain plafond de ressources (1 352 € / mois en 2023) et qu’il a validé au moins 120 trimestres, sa pension de retraite de base ne peut être inférieure à 8 209 € (ou 8 970 € en cas de retraite à taux plein).
+
+</Callout>
+
+### Le calcul de la retraite complémentaire
+
+La retraite complémentaire fonctionne sur le principe du point de retraite. Pendant leur carrière, les travailleurs paient des cotisations à leur caisse de retraite complémentaire. Chaque année, la valeur d’achat du point de retraite est décidée par les organismes de retraite complémentaire.
+
+Au moment de la retraite, il faudra déterminer le nombre total de points de retraite accumulés en divisant le montant annuel des cotisations de retraite complémentaire versées par la valeur d’achat du point de retraite cette année-là.
+
+<CalculationLine isCentered={false}>**Nombre de points** = cotisations de retraite complémentaire versées / valeur d’achat du point</CalculationLine>
+
+Une fois que l’on connaît le nombre de points, il ne reste plus qu’à le multiplier par la valeur de service du point pour connaître le montant de la retraite complémentaire.
+
+<CalculationLine isCentered={false}>**Retraite complémentaire** = nombre de points x valeur de service du point</CalculationLine>
+
+<Underline>Pour information</Underline> : lorsque la retraite n’est pas à taux plein, le travailleur voit sa pension de retraite complémentaire réduite proportionnellement.
+
+## Trois types de statut pour trois types de protection
+
+Du point de vue de la sécurité sociale et de la retraite, le freelance ou le chef d’entreprise appartient à l’un des trois statuts suivants :
+
+- **Salarié / Assimilé salarié :** c’est le cas du président de SASU et du gérant minoritaire ou égalitaire de SARL. C’est également le cas des freelances qui exercent en portage salarial.
+- **“Travailleur indépendant” relevant de la sécurité sociale des indépendants** (aussi appelé TNS, pour Travailleur Non Salarié) : c’est le cas du freelance qui exerce en EURL ou en Entreprise Individuelle
+- **Micro-Entrepreneur**
+
+<BlueP>**Selon le statut auquel appartient le freelance, les cotisations et le montant de la pension de retraite seront très différents.**</BlueP>
+
+Nous aborderons ces trois statuts en allant du plus protecteur (le statut d’assimilé salarié) au moins protecteur (le statut de Micro-Entrepreneur).
+
+<Callout className="smaller-font-container smaller-lines-container">
+<p className="font-bold text-center mb-3">RAPPEL : Les étapes du calcul de la retraite</p>
+
+**Retraite de base** = 50% du revenu annuel moyen des 25 meilleures années
+
+**Retraite complémentaire** = conversion des cotisations de retraite complémentaire en points de retraite PUIS conversion des points de retraite en pension de retraite
+
+**Pension de retraite** (total) = retraite de base + retraite complémentaire
+
+</Callout>
+
+
+## Le calcul de la retraite des freelances ayant le statut d’assimilé salarié (président de SASU)
+
+<OrangeH3>La retraite de base</OrangeH3>
+
+Lorsque le chef d’entreprise (ou le freelance) a le statut d’assimilé salarié et qu’il bénéficie d’une retraite à taux plein et du nombre de trimestres requis, le montant de sa retraite de base sera de **50% du salaire annuel brut moyen des 25 meilleures années**.
+
+<BlueP>C’est la raison principale pour laquelle ce statut est le plus protecteur. En effet, **le salaire brut correspond environ à 125% du salaire net**, ce qui permet aux assimilés salarié de bénéficier d’une forte retraite de base.</BlueP>
+
+<OrangeH3>La retraite complémentaire</OrangeH3>
+
+Le montant de la retraite complémentaire dépend du nombre de points accumulés par le travailleur tout au long de sa carrière, qui dépend lui-même du montant cotisé au titre de la retraite complémentaire (voir exemple ci-dessous).
+
+<BlueP>Comme le montre le tableau suivant, les taux des cotisations de retraite complémentaire des salariés sont élevés, permettant ainsi une forte accumulation de points de retraite complémentaire.</BlueP>
+
+<CustomImg src={employeCompPensionScale} alt="Les taux de la retraite complémentaire des salariés"/>
+
+
+<OrangeH3>Exemple chiffré</OrangeH3>
+
+<div className="smaller-lines-container smaller-font-container">
+**Statut** : Président de SASU
+
+**Salaire brut** : 30 900 €
+
+**Salaire net avant impôt** : 24 000 €
+
+**Retraite de base** : En supposant que la rémunération reste identique pendant 43 années (retraite à taux plein), le montant de sa retraite de base sera de **15 540 € par an**.
+
+<CalculationLine>30 900 € x 50% (x 100% x 100%) = 15 540 €</CalculationLine>
+
+**Retraite complémentaire** : Le montant de sa retraite complémentaire sera de **6 385 € par an**.
+
+<p className="bodytext mb-2 text-center underline">Calcul en 3 étapes</p>
+
+1/ En application des taux du barème, le montant annuel des cotisations de retraite complémentaire est de 1 915 €.
+
+<CalculationLine>6.2% x 30 900 € = 1 915 €</CalculationLine>
+
+2/ Il faut ensuite diviser ce montant par la valeur d’achat du point, soit 17.43 € en 2023, ce qui donne 110 points supplémentaires chaque année.
+
+<CalculationLine>1 915 € / 17.43 € = 110 points</CalculationLine>
+
+3/ Pour obtenir le montant de la retraite complémentaire, en considérant que la rémunération est restée stable pendant 43 ans, il faut multiplier le nombre de points par 43 puis par la valeur de service du point, soit 1.35 € en 2023, ce qui donne 6 385 € de pension retraite complémentaire.
+
+<CalculationLine>109 points x 43 années x 1.35 € = 6 385 €</CalculationLine>
+
+<BlueP>**Pension de retraite (brute) :** 21 925 € (retraite de base + retraite complémentaire)</BlueP>
+
+**Retraite nette avant impôt** : 19 732 € (retraite brute - 10%)
+
+**Taux de remplacement** : 82% (retraite nette avant impôt / salaire net avant impôt)
+
+</div>
+
+<OrangeH3> Comment valide-t-on des trimestres en tant qu’assimilé salarié ?</OrangeH3>
+
+Pour obtenir le nombre de trimestres validés par un assimilé salarié dans l’année, il faut diviser le salaire brut annuel par le montant du SMIC pour 150 heures (soit 1 690 € en 2023), et arrondir à l’entier inférieur.
+
+**Ainsi, pour valider 4 trimestres par an, un président de SASU devra se verser en 2023 un salaire brut annuel supérieur à 6 792 €, soit 564 € par mois**. *Pour connaître le nombre de trimestres validés, rendez-vous sur <InnerLink>notre simulateur de revenu net et de retraite pour freelance</InnerLink>*.
+
+## Le calcul de la retraite des travailleurs indépendants - TNS (EURL, EI)
+
+<OrangeH3>La retraite de base</OrangeH3>
+
+Lorsque le travailleur indépendant (TNS) bénéficie d’une retraite à taux plein et du nombre de trimestres requis, le montant de sa retraite de base sera de **50% de son revenu net imposable moyen des 25 meilleures années.**
+
+<BlueP>**La retraite de base est ici calculée en fonction du revenu imposable**, car c’est ce montant qui sert de base au calcul des cotisations. On comprend alors pourquoi le travailleur indépendant (TNS) est moins bien protégé que l’assimilé salarié qui cotise sur une base plus élevée (son salaire brut).</BlueP>
+
+<OrangeH3>La retraite complémentaire</OrangeH3>
+
+Le montant de la retraite complémentaire dépend du nombre de points accumulés par le travailleur tout au long de sa carrière, qui dépend lui-même du montant cotisé au titre de la retraite complémentaire *(voir exemple chiffré)*.
+
+<BlueP>Comme le montre le tableau suivant, les taux des cotisations sociales de retraite complémentaire des travailleurs indépendants (TNS) sont plus faibles que ceux des salariés, en particulier sur des hauts revenus.</BlueP>
+
+<CustomImg src={TNSCompPensionScale} alt="Les taux de la retraite complémentaire des travailleurs indépendants (TNS)"/>
+
+
+<OrangeH3>Exemple chiffré</OrangeH3>
+
+<div className="smaller-font-container smaller-lines-container">
+
+**Statut** : Gérant majoritaire d’EURL
+
+**Rémunération nette imposable** : 56 139 €
+
+**Rémunération nette avant impôt** : 54 000 €
+
+**Retraite de base** : En supposant que la rémunération reste identique pendant 43 années (retraite à taux plein), la retraite de base ne pourra être basée sur un revenu annuel moyen de 56 139 €, car ce montant dépasse le plafond annuel de la sécurité sociale (43 992 € en 2023). Le revenu pris en compte sera donc ce plafond, ce qui donne une retraite de base de **21 996 € par an**.
+
+<CalculationLine>43 992 € x 50% (x 100% x 100%) = 21 996 €</CalculationLine>
+
+**Retraite complémentaire** : Le montant de sa retraite complémentaire sera de **11 503 € par an**.
+
+<p className="bodytext mb-2 text-center underline">Calcul en 3 étapes</p>
+
+1/ En application des taux du barème des cotisations de retraite complémentaire, le montant annuel des cotisations de retraite complémentaire s’élève à 4 051 €
+
+<CalculationLine>Tranche à 7% : 3 079 € <br/>
+Tranche à 8% : 972 €</CalculationLine>
+
+2/ Il faut ensuite diviser ce montant par la valeur d’achat du point, soit 19.394 € en 2023, ce qui donne 209 points supplémentaires chaque année.
+
+<CalculationLine>4 051 € / 19.394 € = 209 points</CalculationLine>
+
+3/ Pour obtenir le montant de la retraite complémentaire, en considérant que la rémunération est restée stable pendant 43 ans, il faut multiplier ce montant par 43 puis par la valeur de service du point, soit 1.28 € en 2023, ce qui donne 11 503 € de pension retraite complémentaire.
+
+<CalculationLine>209 points x 43 années x 1.28 € = 11 503 €</CalculationLine>
+
+<BlueP>**Pension de retraite (brute) :** 33 499 € (retraite de base + retraite complémentaire)</BlueP>
+
+**Retraite nette avant impôt** : 30 149 € (retraite brute - 10%)
+
+**Taux de remplacement** : 56% (retraite nette avant impôt / rémunération nette avant impôt)
+
+</div>
+
+<OrangeH3> Comment valide-t-on des trimestres en tant que travailleur indépendant (TNS) ?</OrangeH3>
+
+Pour obtenir le nombre de trimestres validés par un travailleur indépendant (TNS) dans l’année, il faut diviser les cotisations de retraite de base versées dans l’année par le montant de la cotisation minimale permettant de valider un trimestre, et arrondir à l’entier inférieur. En 2023, la cotisation minimale permettant de valider un trimestre est de 299 € *(SMIC pour 150 heures 1 690 € x taux de la cotisation à la retraite de base 17.75% = 299 €)*.
+
+*Pour connaître le nombre de trimestres validés, rendez-vous sur <InnerLink>notre simulateur de revenu net et de retraite pour freelance</InnerLink>*.
+
+**Comment valider des trimestres en cas de baisse d’activité ?** Le régime de sécurité sociale des travailleurs indépendants (TNS) prévoit des cotisations minimales qui sont toujours dues, même en l’absence de revenu. Ces cotisations sociales minimums s'élèvent à 1 162 € par an et permettent la validation de 3 trimestres dans l’année ainsi que le remboursement des frais de santé.
+
+## Le calcul de la retraite des Micro-Entrepreneurs
+
+<OrangeH3>La retraite de base</OrangeH3>
+
+Lorsqu’un Micro-Entrepreneur bénéficie d’une retraite à taux plein et du nombre de trimestres requis, le montant de sa retraite de base sera de 50% de son revenu d’activité.
+
+Pour déterminer le revenu d’activité du Micro-Entrepreneur, les étapes suivantes sont toutefois nécessaires :
+
+1. Il faut d’abord **calculer le <Underline>total des cotisations annuelles versées par le Micro-Entrepreneur</Underline>**, en multipliant le chiffre d’affaires par le taux de cotisations (en 2023 : 21.1% pour les services, 12.3% pour l’achat-revente et la restauration).
+2. Il faut ensuite **déterminer <Underline>le montant des cotisations sociales allouées à la retraite de base</Underline>**. La méthode consiste à multiplier les cotisations sociales annuelles par le taux de répartition de la retraite de base, fixé à 41.80%.
+3. Enfin, pour obtenir l’équivalent du revenu d’activité pour les Micro-Entrepreneurs (le <Underline>**revenu "cotisé"**</Underline>), il faut diviser le montant des cotisations sociales allouées à la retraite de base par le taux de cotisation des travailleurs indépendants (TNS) à la retraite de base, soit 17.75% en 2023.
+
+C’est ce montant qui permettra de déterminer le montant de la retraite de base (voir exemple ci-dessous).
+
+<OrangeH3>La retraite complémentaire</OrangeH3>
+
+Le montant de la retraite complémentaire dépend du nombre de points accumulés par le travailleur tout au long de sa carrière, qui dépend lui-même du montant cotisé au titre de la retraite complémentaire *(voir exemple chiffré)*.
+
+Pour connaître le montant des cotisations de retraite complémentaire versées, la logique est la même que pour la retraite de base.
+
+1. Il faut **repartir du montant total des cotisations versées**
+2. Puis **multiplier ce total par le taux de répartition de la retraite complémentaire**, fixé à 16.5%.
+
+C’est ce montant qui sera converti en points de retraite complémentaire, puis en pension de retraite complémentaire lors de la retraite.
+
+<BlueP>Étant donné que les cotisations sociales du Micro-Entrepreneur sont **peu élevées** et que seule **une infime partie de ces cotisations est allouée à la retraite complémentaire** (16.5%), le Micro-Entrepreneur n’accumule mécaniquement que **très peu de points pour la retraite complémentaire**.</BlueP>
+
+<OrangeH3>Exemple chiffré</OrangeH3>
+
+<div className="smaller-lines-container">
+
+**Statut** : Micro-Entrepreneur
+
+**Activité** : Artisant (prestations de service à caractère commercial - BIC)
+
+**Chiffre d’affaires** : 60 000 €
+
+**Cotisations sociales** : 12 660 €
+
+<CalculationLine>60 000 € x 21.1% = 12 660 €</CalculationLine>
+
+**Charges** (non déductibles) : 5 000 €
+
+**Revenu net avant impôt** : 42 340 € (chiffre d’affaires - cotisations sociales - charges)
+
+**Retraite de base** : En supposant que le chiffre d’affaires reste identique pendant 43 années et que le Micro-Entrepreneur bénéficie d’une retraite à taux plein, le montant de sa retraite de base sera de **14 836 € par an**.
+
+<p className="bodytext mb-2 text-center underline">Calcul en 3 étapes</p>
+
+1/ Pour déterminer le montant de cotisations sociales allouées à la retraite de base, il faut multiplier le montant total des cotisations par le taux de répartition des cotisations à la retraite de base, ce qui donne 5 267 €
+
+<CalculationLine>12 600 € x 41.8% = 5 267 €</CalculationLine>
+
+2/ Pour calculer le revenu cotisé, il faut diviser les cotisations pour la retraite de base par le taux de cotisation des travailleurs indépendants (TNS) à la retraite de base, soit 17.75%, ce qui donne 29 672 €
+
+<CalculationLine>5 267 € / 17.75% = 29 672 €</CalculationLine>
+
+3/ Enfin pour calculer le montant de la retraite de base, il faut multiplier le revenu cotisé par 50%, ce qui donne 14 836 €
+
+<CalculationLine>29 672 x 50% (x 100% x 100%) = 14 836 €</CalculationLine>
+
+**Retraite complémentaire** : Le montant de sa retraite complémentaire sera de **5 900 € par an**.
+
+<p className="bodytext mb-2 text-center underline">Calcul en 3 étapes</p>
+
+1/ Il faut tout d’abord repartir des cotisations sociales versées (12 660 €) et appliquer le taux de répartition de la retraite complémentaire (16.5%), ce qui donne le montant cotisé à la retraite complémentaire : 2 079 €
+
+<CalculationLine>12 660 € x 16.5% = 2 079 €</CalculationLine>
+
+2/ Puis il faut calculer le nombre de points de retraite complémentaire accumulés pour une année, en divisant les cotisations versées pour la retraite complémentaire par la valeur d’achat du point (19.394 € en 2023), ce qui donne 107 points par an.
+
+<CalculationLine>2 079 € / 19.343 € = 107 points</CalculationLine>
+
+3/ Enfin, en considérant un chiffre d’affaires identique pendant 43 années, on peut calculer le montant de la retraite complémentaire en multipliant les 107 points par 43 puis par la valeur de service du point (1.28 € en 2023), ce qui donne une retraite complémentaire de 5 900 € par an.
+
+<CalculationLine>107 points x 43 années x 1.28 € = 5 900 €</CalculationLine>
+
+<BlueP>**Pension de retraite (brute) : 20 736** € (retraite de base + retraite complémentaire)</BlueP>
+
+**Retraite nette avant impôt** : 18 663 € (retraite brute - 10%)
+
+**Taux de remplacement** : 44% (retraite nette avant impôt / revenu net avant impôt)
+
+</div>
+
+<OrangeH3>Comment valide-t-on des trimestres en Micro-Entreprise</OrangeH3>
+
+Pour déterminer le nombre de trimestres validés au cours d’une année, il faut repartir du <Underline>revenu "cotisé"</Underline> (que l’on a déjà calculé), le diviser par le SMIC pour 150 heures de travail (1 690 € en 2023), et arrondir à l’entier inférieur.
+
+<Callout className="smaller-font-container smaller-lines-container">
+<p className="font-bold text-center mb-4">Chiffres d’affaires minimums pour valider 4 trimestres en Micro-Entreprise en 2023, par secteur d’activité</p>
+
+- Activité d’achat-revente et la restauration : 23 600 € de chiffre d'affaires
+
+- Activité de services (libérale ou commerciale) : 13 900 € de chiffre d'affaires
+
+Pour connaître le nombre de trimestres validés en Micro-Entreprise au cours d’une année, rendez-vous sur <InnerLink>notre simulateur de revenu net et de retraite pour freelance</InnerLink>.
+
+</Callout>
+
+**Vous craignez de ne pas valider suffisamment de trimestres de retraite au cours d’une année en Micro-Entreprise ?** Il est possible de demander à être soumis au régime des travailleurs indépendants (TNS) plutôt qu’au régime micro-social. Ceci entraînera l’exigibilité d’un montant minimal de cotisations (1 162 € en 2023) vous permettant de valider 3 trimestres par an et de bénéficier de la prise en charge de vos frais de santé.
+
+<div className="text-sky-800">
+## En résumé : comparaison des droits à la retraite par statut juridique
+</div>
+
+<OrangeH3>Le statut d’assimilé salarié (président de SASU, gérant minoritaire/égalitaire de SARL)</OrangeH3>
+
+**À revenu équivalent, le statut le plus protecteur est celui d’assimilé salarié**, ceci pour deux raisons :
+
+1. La retraite de base est calculée sur une base plus élevée : le salaire brut (environ 125% du salaire net)
+2. Les taux des cotisations de retraite complémentaire sont plus élevés, ce qui génère plus de points
+
+Il faut toutefois nuancer ce propos. Les salaires d’assimilé salarié sont **lourdement taxés aux cotisations sociales**, ce qui diminue la rentabilité de l’entreprise. Par ailleurs, une rémunération de dirigeant assimilé salarié sera souvent **couplée à des dividendes, qui ne produisent aucun droit pour la retraite**.
+
+<OrangeH3> Le statut de travailleur indépendant - TNS (gérant d’EURL, Entreprise Individuelle)</OrangeH3>
+
+**Pour un même revenu, le travailleur indépendant (TNS) aura moins de retraite que l’assimilé salarié**, étant donné que le revenu qui sert de base au calcul de la retraite de base est plus faible (revenu net imposable VS salaire brut) et que les taux de cotisations de retraite complémentaire sont plus faibles, ce qui génère moins de points de retraite.
+
+Ce statut **reste toutefois intéressant dans beaucoup de cas** : le revenu du travailleur indépendant (TNS) est **beaucoup moins taxé aux cotisations sociales** que celui des salariés, ce qui permet d’avoir un **revenu net élevé** et **des droits importants pour la retraite**.
+
+<OrangeH3> Le statut de la Micro-Entreprise</OrangeH3>
+
+Comme nous l’avons vu, **les droits à la retraite du Micro-Entrepreneur ne sont pas très bons**. Tout comme pour le travailleur indépendant (TNS), la retraite de base est calculée par rapport à un revenu plus faible que les salariés (le revenu d’activité). D’autre part, le nombre de points de retraite complémentaire accumulés est également faible car il dépend de cotisations sociales peu élevées, ce qui conduit à une pension de retraite globalement basse.
+
+Le régime de la Micro-Entreprise a été conçu comme un coup de pouce administratif et financier pour encourager la création d’entreprise, mais il n'est pas un statut protecteur. Au bout de plusieurs années en Micro-Entreprise, le Micro-Entrepreneur aurait intérêt à anticiper la suite en mettant en place un système d’épargne ou en <InnerLink>changeant de statut, lorsque cela en vaut la peine</InnerLink>.
+
+<div className="text-sky-800">
+## Simulateur : simulez le montant de votre retraite par statut juridique
+</div>
+
+**Le calcul de la retraite est un procédé complexe**, qui fait intervenir plusieurs mécanismes, dont la plupart ont été exposés dans cet article (trimestres, revenu d’activité, plafonnement, etc.).
+
+Si vous souhaitez savoir quelle retraite vous attend après une carrière de freelance ou d’indépendant,  **nous avons justement mis au point un simulateur simple et précis, qui vous permettra de simuler votre retraite, votre revenu net et vos impôts, selon 6 statuts juridiques différents** (Micro-Entreprise, SASU, EURL à l’IR, EURL à l’IS, Entreprise Individuelle, et salariat).
+
+<CustomImg src={pensionGif} className="w-full max-w-[600px] mx-auto" alt="Gif illustrant l'utilisation du simulateur" unoptimized/>
+
+<GoToSimulatorButton/>

@@ -1,0 +1,120 @@
+import { GoToSimulatorButton, InnerLink, Underline, CustomImg } from '../reusable-components'
+import CSMSimul from '@/public/csm.gif'
+
+export const meta = {
+   title: "Simulateur de taxe PUMA (CSM) et explications (calcul, qui la doit, qui la paye, …)",
+    articleTitle: "La taxe PUMA (CSM) : A qui s’applique-t-elle ? Comment est-elle calculée ? Faites une simulation",
+    outsideTitle: "La taxe PUMA (CSM) : A qui s’applique-t-elle ? Comment est-elle calculée ?",
+    subtitle: <><p>La Cotisation Subsidiaire Maladie (CSM), aussi appelée taxe PUMa et &quot;taxe des rentiers&quot;, touche les personnes qui n&apos;ont pas ou peu de revenus du travail et beaucoup de revenus du capital.</p><p className="italic font-semibold extra-intro-p">Découvrez le fonctionnement de la taxe PUMA et <InnerLink>calculez si vous êtes redevable et de quel montant</InnerLink>.</p></>,
+    date: '19/09/2023',
+    description: "Découvrez les règles de la taxe PUMA (ou cotisations subsidiaire maladie), son montant, et ses modalités de paiement. Simulez le montant de taxe PUMA que vous devez.",
+    keywords: [
+        'assurance',
+        'rentiers',
+        'dividendes',
+        'patrimoines',
+        'revenus locatifs',
+        'subsidiaire'
+    ],
+    socialFormsArr: [],
+    topicalRanking: 1,
+}
+
+
+
+## Pourquoi cette cotisation ?
+
+**Toute personne en France qui réside ou travaille de manière régulière a droit à la prise en charge de ses frais de santé.** Cette couverture maladie est financée par les cotisations sociales que les travailleurs paient à l’Urssaf.
+
+Or, les revenus du patrimoine, tels que les dividendes ou les revenus locatifs, ne sont en principe pas soumis aux cotisations sociales, mais uniquement aux prélèvements sociaux.
+
+Dans ce contexte, il a été décidé de créer une cotisation spéciale sur les revenus du patrimoine appelée **Cotisation Subsidiaire Maladie**, afin que les personnes vivant principalement de leur capital cotisent également auprès de l'assurance maladie.
+
+## Qui est concerné par la Cotisation Subsidiaire Maladie (CSM) ?
+
+### Les conditions pour être soumis à la Cotisations Subsidiaire Maladie
+
+Les personnes soumises à la Cotisation Subsidiaire sont **toutes celles** :
+
+* **dont les revenus d’activités professionnelles** sont inférieurs à **8 798 €** (soit 20% du Plafond annuel de la sécurité social, fixé à 43 992 € en 2023)
+* et **dont les revenus du patrimoine** sont supérieurs à **21 996 €** (soit 50% de ce même plafond)
+
+### Qui échappe à la Cotisation Subsidiaire Maladie ?
+
+Pour échapper à la taxe PUMA, **vous ne devez pas remplir les deux conditions ci-dessus**. Ainsi, des revenus professionnels supérieurs à 8 798 € permettent d'échapper à la taxe PUMA. Des revenus du patrimoine inférieurs à 21 996 € également.
+
+Toutefois, pour les couples mariés ou pacsés, la première condition doit être remplie par les deux membres du couple. Cela signifie que si l'un des membres a des revenus professionnels supérieurs à 8 798 €, chaque membre du couple échappe à la taxe PUMA.
+
+Enfin, les personnes qui perçoivent une pension de retraite (ou d'invalidité) ou qui sont indemnisées au titre du chômage sont exemptées de taxe PUMA.
+
+### Les revenus professionnels à prendre en compte
+
+Il s'agit des revenus **obtenus par l’exercice d’une activité professionnelle** et **soumis aux cotisations sociales**.
+
+Le montant à prendre en compte correspond au revenu net imposable retiré de l'activité professionnelle (avant abattement des 10% pour frais professionnels).
+
+### Les revenus du patrimoine à prendre en compte (attention aux dividendes !)
+
+Parmi les revenus soumis à la Cotisation Subsidiaire Maladie, on trouve principalement les revenus qui n’ont pas un caractère professionnel, c’est-à-dire :
+
+- les revenus fonciers
+- les revenus financiers (ex : dividendes, intérêts)
+- les plus-values des particuliers (ex : immobilières, financières)
+- les revenus BIC ou BNC non-professionnels (ex : la Location Meublée Non-Professionnelle (LMNP))
+
+*Ces revenus sont pris en compte pour leur montant net imposable.*
+
+Voilà une bonne raison de ne pas avoir comme unique source de revenu les dividendes de votre SASU : vous pourriez payer jusqu'aux alentours de 6 % de taxe PUMA.
+
+## Comment est calculée la Cotisation Subsidiaire Maladie ?
+
+Vous trouverez dans cette section le détail du calcul de la Cotisation Subsidiaire Maladie.
+
+**Nous avons cependant développé un simulateur simple et intuitif qui vous permettra de <Underline>renseigner tous vos revenus</Underline> et de <Underline>déterminer si vous êtes redevable</Underline> et <Underline>à quel montant s'élève votre taxe PUMA (CSM)</Underline>.**
+
+<CustomImg src={CSMSimul} className="mx-auto w-full sm:w-[95%] max-w-[600px]" my="my-10" caption="Si vous êtes redevable, vous verrez la CSM apparaître à deux endroits de votre simulation. Si vous ne les voyez pas, cela signifie que vous n'êtes pas redevable." alt="Gif illustrant l'utilisation du simulateur" unoptimized/>
+
+<GoToSimulatorButton/>
+
+
+### Le taux de la CSM
+
+Le taux de la Cotisation Subsidiaire Maladie est fixé à **6.5% pour les personnes n’ayant pas de revenus d’activités professionnelles.**
+
+Lorsqu’il y a des revenus d’activités professionnelles, on va réduire ce taux de la manière suivante : le taux sera multiplié par le pourcentage manquant à vos revenus professionnels pour atteindre le seuil de redevabilité de la CSM fixé 8 798 €.
+
+En clair, plus vos revenus professionnels approchent le seuil de 8 798 €, plus le taux devient faible, voire nul (0%).
+
+### Le calcul de la CSM
+
+Pour obtenir le montant de la CSM, il faut appliquer ce taux à une partie seulement des revenus du patrimoine.
+
+La partie des revenus du patrimoine à laquelle sera appliqué le taux correspond **à celle comprise entre 21 996 €** (soit le seuil de redevabilité précité) **et 351 936 €** (soit 8 fois le Plafond annuel de la sécurité sociale en 2023).
+
+## Que se passe-t-il en cas de déclaration d’impôt commune par un couple marié ou pacsé ?
+
+Il faut distinguer au sein de la déclaration :
+
+1. Les **revenus du patrimoine qui sont déclarés au nom de l’un des membres du couple** (ex : les revenus provenant de location meublée)
+2. Les **revenus du patrimoine qui sont déclarés de manière commune**, sans individualisation possible (ex : les dividendes)
+
+Dans le premier cas, chaque membre du couple devra la Cotisation Subsidiaire Maladie sur les revenus qui apparaissent en son nom sur la déclaration.
+
+Dans le second cas, chaque membre du couple devra la Cotisation Subsidiaire Maladie sur la moitié des revenus du patrimoine déclarés. [Le site de l’Urssaf](https://www.urssaf.fr/portail/home/espaces-dedies/beneficiaire-de-la-puma/assiette-de-la-cotisation-subsid.html) précise néanmoins que l’un des membres du couple qui est redevable de la CSM peut en contester le montant en prouvant qu'il n'a en réalité pas bénéficié de la moitié de ces revenus.
+
+## Que se passe-t-il si je dois la Cotisation Subsidiaire Maladie ?
+
+Une fois votre déclaration de revenus effectuée, le service des impôts transmet à l’Urssaf la composition de vos revenus, et si vous êtes concerné, vous recevez un avis d’appel de cotisations, avec un délai de 30 jours pour procéder au paiement de la cotisation.
+
+
+## La Cotisation Subsidiaire Maladie est-elle déductible ?
+
+La Cotisation Subsidiaire Maladie est effectivement déductible pour le calcul de l’Impôt sur le revenu (IR).
+
+## Faites une simulation
+
+<div className="flex justify-center">
+<p className="bodytext">
+<InnerLink>Déterminez le montant global de vos impôts et de votre taxe PUMA (CSM)</InnerLink>
+</p>
+</div>

@@ -1,0 +1,37 @@
+{
+    "env": {
+        "es6": true
+    },
+    "extends": [
+        "next",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:mdx/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "eslint-plugin-mdx"],
+    "rules": {
+        "no-console": "warn",
+        "no-case-declarations": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "no-extra-semi": "warn"
+    },
+    "globals": {
+        "React": true
+    },
+    "ignorePatterns": ["*cy.js", "cypress"],
+    "settings": {
+        "mdx/code-blocks": true
+    },
+    "overrides": [
+        {
+            "files": ["*.mdx"],
+            "plugins": ["eslint-plugin-mdx"],
+            "extends": "plugin:mdx/recommended",
+            "rules": {
+                "no-irregular-whitespace": "off",
+                "no-multi-spaces": "warn"
+            }
+        }
+    ]
+}

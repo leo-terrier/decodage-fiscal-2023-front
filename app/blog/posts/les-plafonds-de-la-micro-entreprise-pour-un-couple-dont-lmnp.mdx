@@ -1,0 +1,102 @@
+import {
+    CustomImg,
+    Callout,
+    InnerLink,Underline
+} from '../reusable-components'
+import MERevenueThresholds from '@/public/seuils-ca-micro-entreprise.png'
+
+export const meta = {
+    title: 'Les plafonds de la Micro-Entreprise pour un couple (dont LMNP)',
+    articleTitle:
+        'Couple marié ayant plusieurs entreprises (dont LMNP) : attention aux plafonds de la Micro-Entreprise !',
+    subtitle: (
+        <>
+            <p>
+                La Micro-Entreprise est un statut fiscal et social avantageux,
+                qui est en principe réservé aux entreprises dont le chiffre
+                d’affaires ne dépasse pas certains plafonds.
+            </p>
+            <p>
+                Toutefois, il a des cas où plusieurs entreprises existent au
+                sein d’un couple et où l’appréciation des limites de chiffres
+                d’affaires ne sera pas faite individuellement à l’échelle de
+                l’entreprise, mais globalement à l’échelle du couple.
+            </p>
+        </>
+    ),
+    date: '05/10/2023',
+    description:
+        "En cas de pluralité d'entreprises / LMNP au sein d'un couple, les règles d'appréciation des limites de la Micro-Entreprise varient selon différents facteurs. Déterminez si votre couple est éligible au régime Micro-BIC.",
+    keywords: [
+        'LMNP',
+        'Micro-BIC',
+        'Plafond',
+        'couple marié',
+        'biens communs',
+        'cumul',
+        'quotient familial',
+        'imposition'
+    ],
+    socialFormsArr: [],
+    topicalRanking: 1
+}
+
+## Les cas où le chiffre d’affaires est cumulé à l’échelle du couple
+
+Pour qu’il y ait une appréciation globale des chiffres d’affaires à l’échelle du couple, il faut **réunir <Underline>deux conditions</Underline>** :
+
+1. Les seuls revenus pris en compte sont **ceux taxés dans la catégorie des Bénéfices Industriels et Commerciaux (BIC) et réalisés par des Entreprises Individuelles** (ce qui inclut les Micro-Entreprises). Il faut donc deux Entreprises Individuelles imposées directement à l’Impôt sur le Revenu (IR) dans la catégorie des BIC.
+    <Callout className='smaller-font-container'>
+        Cela sera le cas lorsqu’il existe au sein du couple une pluralité
+        d’Entreprises Individuelles dont les activités ont une nature
+        commerciale. Les sociétés à l’IS ou à l’IR et leurs dirigeants, ainsi
+        que les personnes qui ont des revenus rattachés à la catégorie des
+        Bénéfices Non Commerciaux (BNC) ne sont donc **pas concernés par la
+        globalisation des chiffres d’affaires**. _Pour information, les
+        activités taxées dans la catégorie des BNC sont les activités dites
+        “libérales”, qui consistent à titre principal en des prestations
+        intellectuelles (ex : médecin, architecte, ingénieur indépendant)._
+    </Callout>
+2. **Au moins l’une des Entreprises constitue un** **bien commun du couple.** Cela sera le cas lorsque **le couple est marié sous le régime matrimonial de la communauté légale et que l’entreprise est** **créée ou acquise pendant la durée du mariage**. Les personnes qui échappent à cette règle sont donc les personnes mariées sous le régime de la séparation de biens, les couples pacsés et les couples dans lesquels chaque entreprise constitue un bien propre.
+
+Pour résumer, si le couple dispose de plusieurs Entreprises générant des revenus BIC, et qu’au moins l’une de ces Entreprises est un bien commun, il faudra déterminer l’éligibilité du couple au régime de la Micro-Entreprise en prenant en compte la totalité des chiffres d’affaires de ces entreprises.
+
+## Exemples chiffrés
+
+Voici les plafonds de la Micro-Entreprise par catégorie d’activité pour l’année 2023 :
+
+<CustomImg
+    src={MERevenueThresholds}
+    alt="Montant total des échéances dues à l'Urssaf en cas d'option pour le VFL"
+    className={'w-[290px] sm:w-[450px] mx-auto'}
+/>
+Pour rester en Micro-Entreprse, le chiffre d’affaires doit se maintenir en dessous
+de la limite correspondant au type d’activité. Si la limite est dépassée deux années
+de suite, l’entreprise sera automatiquement basculée vers le régime réel d’imposition
+l’année suivante.
+
+### Exemple n°1 : Les membres du couple exerçant la même catégorie d’activité (double activité de service ou de vente)
+
+Prenons le cas d’un couple dont chaque membre génère des revenus BIC appartenant à la catégorie des services (ex : artisanat et location de véhicules).
+
+Pour continuer à bénéficier du régime de la Micro-Entreprise dans une ou plusieurs entreprises du couple (Micro-BIC), **le chiffre d’affaires global de ces entreprises devra se maintenir sous le seuil de 77 700 €**.
+
+Si les membres du couple avaient tous les deux exercé une activité d’achat-revente, le seuil en dessous duquel il aurait fallu rester pour pouvoir continuer à bénéficier du régime Micro-BIC aurait été 188 700 €.
+
+### Exemple n°2 : Les membres du couple exerçant des catégories d’activité différentes
+
+Si l’un des membres du couple exerce une activité d’achat-revente et l’autre une activité de service, il y a alors une double limite à respecter : **le chiffre d’affaires global doit se maintenir sous le seuil propre à l’achat-revente** (188 700 €) **tandis que le chiffre d’affaires relatif aux services doit se maintenir sous le seuil propre aux services** (77 700 €).
+
+## Qu’en est-il de la location meublée ?
+
+La location meublée en LNMP _semble_ également concernée par l’appréciation globale des chiffres d’affaires.
+
+Si l’activité locative fait partie des biens communs du couple (car créée pendant la durée du mariage), l’appréciation du seuil de la Micro-Entreprise _devrait_ tenir compte de la totalité des loyers encaissés par le couple en LMNP (dans la catégorie des services) pour déterminer l’éligibilité globale au régime Micro-BIC.
+
+L’application de cette règle à la location meublée paraît toutefois **sévère** dans la mesure où la règle vise initialement le caractère propre ou commun du fonds de commerce ([BOI-BIC-DECLA-10-10-20](https://bofip.impots.gouv.fr/bofip/1799-PGP.html/identifiant%3DBOI-BIC-DECLA-10-10-20-20180601)), notion assez peu transposable à la location meublée non-professionnelle.
+
+Si vous craignez dépasser les seuils de la Micro-Entreprise à cause de votre LMNP, n’hésitez pas à consulter un expert tel qu’un avocat fiscaliste ou votre expert-comptable.
+
+## Faites une simulation
+
+**Vous souhaitez savoir si vous dépassez les seuils de la Micro-Entreprise à l'échelle de votre couple ?** Notre <InnerLink>simulateur de statuts juridiques</InnerLink> est paramétré pour analyser les seuils de la Micro-Entreprise et avertir si le seuil est dépassé.

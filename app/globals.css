@@ -1,0 +1,268 @@
+/* used for injecting generated tailwind styles to global stylesheet in the app */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* - breakpoints
+Breakpoint prefix	Minimum width	CSS
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } */
+
+
+* {
+    @apply text-blueGray-dark font-nunito border-blueGray-dark;
+}
+body {
+    @apply overflow-hidden flex flex-col;
+}
+h1 {
+    @apply text-2xl lg:text-3xl text-center font-semibold font-poppins mt-3 md:mt-4 mb-6 md:mb-8 2xl:mb-10 3xl:mb-12;
+}
+
+h2 {
+    @apply text-2xl;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input,
+select {
+    @apply font-normal rounded-sm border-[1px] border-blueGray-light outline-none;
+}
+
+/* SPECIFICS  */
+
+a[href*='http'],
+a[href*='mailto'],
+a.inner-text-link {
+    @apply text-sky-800 underline hover:text-sky-900;
+}
+
+a.normal-color-link {
+    @apply underline text-blueGray-dark hover:text-blueGray-dark;
+}
+
+a.inner-warning-link {
+    @apply hover:text-slate-400 text-slate-500 underline;
+}
+
+.custom-progress-bar {
+    transition: width 0.3s ease-in-out;
+}
+
+.bar {
+    transition: height 0.3s ease-in-out;
+}
+
+.loader {
+    position: absolute;
+    animation: moveRight 0.8s linear infinite;
+}
+
+.hideElement {
+    @apply hidden;
+}
+
+.textShadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes moveRight {
+    0% {
+        left: -50px;
+    }
+    100% {
+        left: 100%; /* Final position, moving to the right end of the container */
+    }
+}
+
+.credits span {
+    @apply text-[10px];
+}
+.credits a {
+    @apply text-blueGray-dark;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    @apply bg-transparent !important;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+    @apply bg-transparent !important; /* Make the scrollbar thumb transparent */
+}
+
+/* simulator intro features section */
+#simulator-intro-feature-desc p {
+    @apply text-sm mb-[0.4em] text-gray-700;
+}
+
+#simulator-intro-feature-desc h3 {
+    @apply text-base font-semibold mb-[0.5em] mt-[0.6em] text-gray-700;
+}
+
+#simulator-intro-feature-desc h4 {
+    @apply text-sm mb-[0.4em] text-gray-700 font-semibold underline;
+}
+
+/* Inner Page container */
+
+/* simulator */
+.borderContainerWidth {
+    @apply mx-auto max-w-[1600px] sm:w-11/12  xl:w-[88%] 3xl:w-[84%];
+}
+.borderContainerPadding {
+    @apply sm:p-6 md:p-9 xl:p-11 2xl:p-14 3xl:p-16;
+}
+.articlePageContainerStyle {
+    @apply w-[97%] borderContainerWidth border-x bg-white p-6 md:p-8 lg:p-12 3xl:p-14;
+}
+
+/* TEXT */
+
+h1.bodytext {
+    @apply font-semibold sm:text-center text-[1.45rem] sm:text-[1.95rem] font-poppins leading-normal;
+}
+
+h2.bodytext {
+    @apply mb-[1em] sm:mb-8 mt-11 sm:mt-12 text-[1.65rem] sm:text-3xl font-bold text-inherit;
+}
+h3.bodytext {
+    @apply mb-[0.9em] sm:mb-7 mt-9 sm:mt-10 text-2xl font-semibold;
+}
+h4.bodytext {
+    @apply mb-[0.8em] mt-7 sm:mt-8 text-xl font-semibold text-orange-dark;
+}
+
+h5.bodytext {
+    @apply leading-7 text-lg mb-[0.8em] mt-5 sm:mt-6 text-sky-800 underline;
+}
+
+h3.h4class {
+    @apply mb-[0.8em] mt-7 sm:mt-8 text-xl font-semibold text-orange-dark;
+}
+
+div.intro-div p {
+    @apply mb-3 text-lg;
+}
+div.blog-list-intro-div p {
+    @apply text-opacity-70;
+}
+div.blog-list-intro-div p.extra-intro-p {
+    @apply hidden;
+}
+
+p.bodytext,
+li.bodytext,
+ul.bodytext,
+ol.bodytext {
+    @apply leading-7 sm:text-[1.1rem];
+}
+
+p.bodytext,
+ul.bodytext,
+ol.bodytext {
+    @apply mb-[.8em];
+}
+
+li.bodytext p {
+    @apply inline mb-0;
+}
+
+li.bodytext {
+    @apply mb-[0.5em];
+}
+
+ul > li.bodytext {
+    @apply before:-mr-1;
+}
+
+.smaller-font-container .bodytext {
+    @apply text-base;
+}
+
+.smaller-font-container p.bodytext,
+.smaller-font-container ul.bodytext {
+    @apply mb-[0.8em] last:mb-0;
+}
+
+.smaller-lines-container p.bodytext {
+    @apply mb-[0.3em];
+}
+
+/* // kind of dupplicate */
+
+.callout :last-child {
+    @apply mb-0;
+}
+
+ul.bodytext {
+    @apply list-disc;
+}
+
+ol.bodytext {
+    @apply list-decimal;
+}
+
+ul.bodytext,
+ol.bodytext {
+    @apply list-inside mt-[-0.4em] ml-[0.8em];
+}
+
+a.bodytext {
+    @apply underline;
+}
+
+strong {
+    @apply text-inherit;
+}
+/* TEST COLORS
+
+.IR {
+    background: #84e3d6;
+    color: #4696b4;
+}
+.revenuNet {
+    background: #b0ffd3;
+    color: #228b22;
+}
+*/
+
+/* TOAST */
+
+@media (min-width: 640px) {
+    .toast-container {
+      width: fit-content !important;
+      min-width: 300px;
+    }
+  }
+
+ /*  @media (min-width: 768px) {
+    .toast-container {
+      max-width: 440px !important;
+    }
+  }
+
+  @media (min-width: 1064) {
+    .toast-container {
+      max-width: 500px !important;
+    }
+  }  */
+
+.toast-text {
+    max-width: 100% !important;
+}
+
+.toast-text-sub {
+    opacity: 60%;
+}
+
+
+.test {
+    background-color: rgba(226 232 240, 0.7);
+}

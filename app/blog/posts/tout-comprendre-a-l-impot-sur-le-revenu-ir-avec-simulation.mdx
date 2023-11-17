@@ -1,0 +1,204 @@
+import {
+    CustomImg,
+    CenteredInfoLink,
+    Callout,
+    GoToSimulatorButton,
+    Underline,
+    InnerLink
+} from '../reusable-components'
+import IncomeTaxScale from '@/public/income-tax-scale.png'
+
+export const meta = {
+    title: "Tout comprendre à l'Impot sur le Revenu (IR) (avec simulation)",
+    articleTitle: "Tout comprendre à l'Impot sur le Revenu (IR)",
+    subtitle: (
+        <p>
+            Vous trouverez dans cet article les notions fondamentales permettant
+            de comprendre comment est calculé l&apos;Impôt sur le Revenu (IR),
+            qui est dû par les personnes physiques.
+        </p>
+    ),
+    date: '19/09/2023',
+    description:
+        "Définitions et illustrations du calcul de l'impôt sur le revenu",
+    keywords: [
+        'Fiscalité',
+        'impôt sur le revenu',
+        'IR',
+        'IRPP',
+        'simulation',
+        'barème',
+        'tranche du barème',
+        'quotien familial',
+        'imposition'
+    ],
+    socialFormsArr: [],
+    topicalRanking: 2
+}
+
+## Qu’est-ce que l’impôt sur le revenu ?
+
+L'impôt sur le revenu a pour but de financer les services publics comme l'éducation, les gares, l'armée...
+
+Il est collecté par le fisc français auprès des citoyens qui gagnent de l’argent. Si les gains réalisés au cours d'une année par une personne dépassent un certain montant, la personne devra payer de l'impôt sur le revenu au titre de cette année.
+
+**L'impôt doit donc être distingué :**
+- des **cotisations sociales**, qui ne sont pas versées au fisc, mais à l’Urssaf, et ont pour but d’alimenter les caisses de sécurité sociale, afin de financer les services publics de santé et de retraite
+- de l'**Impôt sur les Sociétés (IS)**, qui est prélevé sur les bénéfices des personnes morales (les sociétés) et non ceux des personnes physiques (les individus)
+
+## Quels sont les revenus soumis à l'impôt ?
+
+Seront soumis à l'impôt sur le revenu **tous les revenus gagnés par une personne au cours d’une année**. Pour qu'il y ait impôt, il faut qu'il y ait **accroissement de richesse**.
+
+La plupart des gens paient de l'impôt sur leurs **revenus professionnels** (ex : salaire,
+rémunération, retraite). Certaines personnes paient également des impôts sur leurs
+**revenus du patrimoine**, car les biens qu'ils possèdent sont productifs de revenus,
+soit de manière régulière (ex : des loyers, des dividendes), soit de manière exceptionnelle
+(ex : une plus-value).
+
+L'impôt est donc déclenché par l’accroissement de richesse : sans enrichissement, il n'y a pas d'impôt. Ainsi, le fait de revendre un véhicule sans plus-value ou encore d’obtenir un remboursement de prêt, ne déclenche pas d'imposition, faute d'enrichissement.
+
+<Callout className='italic smaller-font-container'>
+    Bien qu'il soit source d'enrichissement, l’héritage n'est pas non plus
+    soumis à l'impôt sur le revenu. Il est en revanche soumis à l'impôt sur les
+    successions.
+</Callout>
+
+## Combien faut-il gagner pour être imposable ?
+
+**Pour être imposable à l’impôt sur le revenu, une personne seule doit générer un revenu imposable supérieur à 10 777 € / an.** En dessous de ce montant, le taux de l'impôt est de 0%. _La personne est dite "non-imposable"._
+
+<CustomImg
+    src={IncomeTaxScale}
+    alt="Montant des tranches du barème de l'IR"
+    className={'w-[300px] sm:w-[360px] mx-auto'}
+/>
+
+Mais cela ne vaut que pour une personne célibataire sans enfant : le seuil à partir duquel de l'impôt est dû varie selon la situation familiale. _Ainsi, un couple marié sans enfant devra générer ensemble plus de 21 554 € pour être imposable. Nous étudierons le calcul de l'impôt lors de la prochaine section._
+
+## Comment se calcule l'impôt sur le revenu ?
+
+Pour calculer l'impôt, il faut préalablement déterminer le revenu imposable du foyer ainsi que le nombre de parts de quotient familial.
+
+### 1) Les revenus imposables
+
+Tous les revenus des membres d'un foyer fiscal vont s'ajouter dans ce qu'on appelle **le revenu global**, et c'est cette base qui servira pour calculer l'impôt sur le revenu.
+
+Il existe différentes catégories de revenus (traitements et salaires, plus-values, Bénéfices Industriels et Commerciaux (BIC), etc.). Dans la majorité des cas, le revenu net imposable qui va intégrer le revenu global est le revenu net avant impôt, auquel on ajoute le montant des cotisations sociales non-déductibles. **Pour les salariés et les dirigeants de sociétés à l'Impôt sur les Sociétés (IS), le fisc déduit en plus, automatiquement, 10% du revenu imposable au titre des frais professionnels.**
+
+Toutefois, certaines catégories de revenus n'intègrent pas le revenu global servant de base au calcul de l'impôt.
+
+Il s'agit principalement :
+- **des produits financiers** (les dividendes, les intérêts perçus, et les plus-values sur titre), qui sont en principe taxés au taux fixe de 12.8%, auquel il faut ajouter 17.2% de prélèvements sociaux (ce qui donne la "Flat Tax" à 30%)
+- **des plus-values immobilières**, qui sont taxées au taux fixe de 19%, auquel il faut également ajouter 17.2% de prélèvements sociaux
+
+<Callout className='smaller-font-container'>
+    *Il est possible de **déduire du revenu global certaines sommes**,
+    principalement les pensions alimentaires, les versements effectués sur un
+    Plan d'Epargne Retraite (PER) et les frais d'accueil des personnes âgées
+    ([plus
+    d'information](https://www.economie.gouv.fr/particuliers/revenu-imposable-revenu-fiscal-reference)).*
+</Callout>
+
+### 2) Le nombre de parts du quotient familial
+
+Cette étape concerne uniquement les personnes mariés ou pacsés ou ayant des enfants. Les personnes non-concernées peuvent passer à l'étape suivante.
+
+Le mécanisme du quotient familial permet aux couples ayant des enfants de diminuer leur impôt, et aux couples sans enfant de parfois diminuer leur impôt.
+
+Le nombre de parts est déterminé de la manière suivante :
+
+-   **Nombre de parts initiales** : soit le foyer est constitué par un **couple**, et dans ce cas il y a deux parts initiales,
+    soit le foyer est constitué par un **parent célibataire**, et dans ce cas-là il n'y a qu'une part initiale
+
+-   **Nombre de parts
+    supplémentaires** : les enfants mineurs vivant au sein du foyer rajoutent une
+    demi-part, jusqu'au troisième enfant, qui vaut une part entière. _Pour les
+    familles nombreuses, tous les enfants à compter du troisième valent une part
+    entière_.
+
+Le nombre total de parts s'obtient en faisant la somme des parts initiales et supplémentaires.
+
+<Callout className="smaller-font-container">
+    Il existe de nombreuses exceptions au calcul des parts supplémentaires
+    (résidence alternée, parents isolés, enfants majeurs toujours en étude,
+    etc.). [Plus d'informations pour un couple
+    marié](https://www.service-public.fr/particuliers/vosdroits/F2705#:~:text=nombre%20de%20parts.-,Ce%20nombre%20de%20parts%20d%C3%A9pend%20de%20la%20situation%20du%20contribuable,chaque%20quart%20de%20part%20suppl%C3%A9mentaire)
+    et [pour une personne
+    seule](https://www.service-public.fr/particuliers/vosdroits/F2702).
+</Callout>
+
+### 3) Le calcul de l'impôt
+
+Vous trouverez dans cette section le détail du calcul de l'impôt sur le revenu.
+
+**Nous avons cependant développé un simulateur simple et intuitif qui vous permettra de <Underline>renseigner tous vos revenus</Underline> et de <Underline>connaître le montant de vos impôts</Underline>**.
+
+<GoToSimulatorButton />
+
+#### Le calcul de l'impôt des personnes célibataires sans enfant
+
+Pour les **personnes célibataires sans enfant**, le calcul est relativement simple. Il suffit de prendre le montant final du revenu global, puis de lui appliquer le taux correspondant à chaque tranche dans laquelle il se situe.
+
+Ainsi par exemple, pour une personne ayant un revenu global de 29 000 €, l'impôt sera de **2 212 €** :
+
+    * **0 €** sur la tranche allant de 0 € à 10 777 € de revenu imposable, car 10 777 x
+    0% = 0
+    * **1 837 €** sur la tranche allant de 10 778 € à 27 478 € de revenu imposable, car  27 478 - 10 778 = 16 700 et 16 700 x 11% = 1 837
+    * **375 €** sur la tranche allant de 27 749 € jusqu'au revenu imposable, car 29 000 - 27 749 = 1 251 et 1 251 x 30% = 375
+
+**On voit que le même revenu va subir des taux d'imposition de plus en plus forts lorsque l'on s'approche des tranches élevées du barème de l'impôt sur le revenu**.
+
+#### Le calcul de l'impôt des personnes mariées ou pacsée ou ayant des enfants
+
+Pour les **personnes mariés ou pacsées ou ayant des enfants**, le principe est le même, mais d'autres étapes sont nécessaires.
+
+Le montant qui va servir de base au calcul de l'impôt n'est pas le revenu global, mais le revenu global divisé par le nombre total de parts de quotient familial.
+
+Il faut donc d'abord diviser le revenu global du foyer par le nombre total de parts de quotient familial, pour connaître le **revenu par part**.
+
+Puis il faut déterminer **l'impôt par part de quotient familial,** de la même manière que dans l'exemple précédent relatif aux personnes célibataires.
+
+**Pour connaître le montant de l'impôt dû par le foyer, il suffit de multiplier l'impôt par part de quotient familial par le nombre de parts**.
+
+Une <Underline>étape supplémentaire</Underline> est toutefois nécessaire pour <Underline>les contribuables ayant des enfants</Underline>. La loi limite l'avantage fiscal par demi-part supplémentaire à un certain montant : 1 678 € en 2023.
+
+Il faut en conséquence calculer l'impôt avec plafonnement de l'avantage fiscal. Cela se fait de la manière suivante :
+
+-   recalculer l'impôt total, en considérant cette fois qu'il n'y a pas d'enfant (pas de part supplémentaire, uniquement des parts initiales)
+-   déduire de l'impôt final 1 678 € par demi-part supplémentaire (_ex : si le couple a 2 enfants, cela signifie qu'il a 1 part supplémentaire. Il convient donc de déduire 2 x 1678 = 3 356 €_.)
+
+**Si l'impôt ainsi trouvé dépasse l'impôt qui avait été trouvé lors du premier calcul, c'est ce montant qui sera dû. Sinon, le plafonnement n'est pas applicable et le montant qui avait été calculé correspond bien à l'impôt dû par le foyer.**
+
+<CenteredInfoLink>
+    [Lien vers d'autres d'exemples
+    chiffrés](https://www.economie.gouv.fr/particuliers/tranches-imposition-impot-revenu#:~:text=Tranche%20de%20revenu%20jusqu'%C3%A0,%3D%201%20356%2C6%20%E2%82%AC.)
+</CenteredInfoLink>
+
+Une fois que le montant de l'impôt est connu, il va être possible de déterminer **le taux global d'imposition** _(impôt ÷ revenu global)_, qui correspond au taux auquel chaque revenu sera imposé.
+
+Ce taux est en principe le même au sein du couple, mais il est possible de demander une répartition différente, par exemple pour tenir compte d'une différence de salaire ([plus d'information](https://www.economie.gouv.fr/particuliers/modifier-gerer-taux-prelevement-source#qu-est-ce-que-le-taux-de-pr-l-ve_0)).
+
+#### La décote, les crédits et les réductions d'impôts
+
+Le montant de l'impôt ainsi calculé peut être réduit par plusieurs mécanismes.
+
+**La décote** : lorsque le montant de l'impôt dû par le foyer est inférieur à 1 840 € pour une personne célibataire ou 3 045 € pour une personne mariée ou pacsée, l'impôt est réduit d'un montant variable.
+
+<Callout className='smaller-font-container italic'>
+    En pratique, cela revient à annuler l'impôt lorsque l'impôt dû est inférieur
+    à 400 € pour une personne seule ou à 900 € pour un couple, et à le réduire
+    lorsque l'impôt est compris entre ce montant et le seuil précité. **Ainsi,
+    une personne dont le salaire net avant impôt est de 16 000 € n'est en
+    réalité pas imposable**.
+</Callout>
+
+**Les crédits et réductions d'impôts** : il arrive que l'Etat "prenne en charge" certains investissements qu'il juge bénéfique, en permettant aux contribuables ayant investi de réduire leur impôt du montant investi. Il en va ainsi en matière d'investissements immobiliers à caractère social (ex : loi Pinel), de rénovation énergétique, ou encore d'investissement dans l'Outre-mer ([plus d'informations](https://www.economie.gouv.fr/particuliers/reductions-aides-credits-impot)).
+
+La réduction et le crédit d'impôt sont en général très encadrés (montant, durée, plafonnement, etc.).
+
+La différence entre le crédit d'impôt et la réduction d'impôt est que, contrairement à la réduction, le crédit d'impôt donne lieu à **remboursement de l'Etat au profit du contribuable si l'impôt n'est pas assez élevé pour déduire le crédit d'impôt**. En matière de réduction d'impôt, si la réduction d'impôt est plus élevée que le montant de l'impôt, celle-ci est perdue.
+
+## Simulez votre impôt
+
+**Vous souhaitez vous économiser d'un mal de crâne ?** Calculez votre impôt en quelques clics avec <InnerLink>notre simulateur</InnerLink>.

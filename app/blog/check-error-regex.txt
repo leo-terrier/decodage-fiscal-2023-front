@@ -1,0 +1,12 @@
+regex check (\s%|\S€|\S:|Impôt|euro|\d{4}) case sensitive
+
+-   %
+-   \S€
+-   \S:
+-   Impôt
+- euros
+- 1000
+
+
+add " :**, sécurité social"
+

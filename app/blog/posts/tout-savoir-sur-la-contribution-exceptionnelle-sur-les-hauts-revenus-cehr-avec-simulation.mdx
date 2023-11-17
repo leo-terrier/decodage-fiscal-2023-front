@@ -1,0 +1,124 @@
+import { CustomImg, Underline, GoToSimulatorButton,InnerLink } from '../reusable-components'
+
+import CEHRScale from "@/public/bareme-cehr.png"
+import CEHRSimul from "@/public/cehr.gif"
+export const meta = {
+    title: "Tout comprendre à la CEHR en 2023 : simulateur, calcul, déclaration (Contribution Exceptionnelle sur les Hauts Revenus)",
+    articleTitle: "La Contribution Exceptionnelle sur les Hauts Revenus (CEHR) : A qui s’applique-t-elle ? Comment est-elle calculée ? Faites une simulation",
+    outsideTitle: "La Contribution Exceptionnelle sur les Hauts Revenus (CEHR) : A qui s’applique-t-elle ? Comment est-elle calculée ?",
+    subtitle: (<>
+                        <p>La Contribution Exceptionnelle sur les Hauts Revenus (CEHR) est un impôt que paient les personnes aux revenus très élevés.</p>
+                        <p className="italic font-semibold extra-intro-p">Découvrez qui est concerné par la CEHR, comment elle est calculée et payée, et <InnerLink>calculez votre impôt et votre CEHR</InnerLink>.</p>
+                        </>),
+    date: '19/09/2023',
+    description:
+        "Détail du calcul et simulation de la Contribution Exceptionnelle sur les Hauts Revenus (CEHR)",
+    keywords: [
+        'CEHR',
+        'Contribution Exceptionnelle sur les Hauts Revenus',
+        'barème',
+        'tranche du barème',
+        'quotien familial',
+        'imposition'
+    ],
+    socialFormsArr: [],
+    topicalRanking: 1,
+
+}
+
+## Qu’est-ce que la Contribution Exceptionnelle sur les Hauts Revenus (CEHR) ?
+
+Instaurée pour renforcer les finances de l’Etat après la crise de 2008, la CEHR frappe la fraction la plus élevée des revenus des contribuables fortunés, à hauteur de 3 ou 4%.
+
+Le fonctionnement de la CEHR est proche de <InnerLink href="/blog/tout-comprendre-a-l-impot-sur-le-revenu-ir-avec-simulation">celui de l’impôt sur le Revenu (IR)</InnerLink>, mais elle obéit à certaines spécificités relatives au quotient familial, au paiement de l’impôt et au lissage des revenus exceptionnels ([article 223 sexies, Code général des impôts](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036427364#:~:text=Les%20r%C3%A9clamations%20sont%20adress%C3%A9es%20au,d'imp%C3%B4t%20sur%20le%20revenu.]).
+
+
+
+## Quels revenus servent de base à la CEHR (l’assiette de la CEHR) ?
+
+Le revenu servant de base à la CEHR est le **revenu fiscal de référence**.
+
+Le revenu fiscal de référence est un montant calculé par l’administration fiscale, censé refléter total des gains du foyer sur une année donnée.
+
+Pour déterminer le revenu fiscal de référence, il faut en général partir du revenu net imposable du foyer et y ajouter deux types de sommes :
+- Certains revenus taxés à taux fixe (comme les dividendes)
+- Certaines sommes déduites pour le calcul de l’impôt sur le revenu, mais non-déductibles du revenu fiscal de référence (comme les versements effectués sur un Plan d’Epargne Retraite)
+
+## Qui est concerné par le paiement de la CEHR ?
+
+Les contribuables qui doivent payer la CEHR sont **ceux dont le <Underline>revenu fiscal de référence</Underline> au niveau du foyer dépasse 250 000 € pour une personne célibataire et 500 000 € pour une personne mariée ou pacsé**.
+
+## Comment la CEHR est-elle calculée ?
+
+Tout comme pour le calcul de l’impôt sur le revenu, le calcul de la CEHR consiste à prendre la base imposable et à lui appliquer le taux correspondant à la tranche dans laquelle elle se situe. Toutefois, au lieu de prendre pour base le revenu imposable, on prend une base élargie : le revenu fiscal de référence.
+
+Voici les différents taux de la CEHR en fonction de la situation matrimoniale :
+
+<CustomImg
+    src={CEHRScale}
+    alt='Barème de la CEHR'
+    className={'w-[300px] sm:w-[390px] mx-auto'}
+/>
+
+<Underline>Pour information</Underline> : le nombre d’enfants à charge n’a aucune incidence sur taux de la CEHR.
+
+## L’atténuation de la CEHR en cas de revenus exceptionnels
+
+Il existe un mécanisme qui permet d’atténuer l’effet de la CEHR, pour les contribuables qui percevraient des revenus anormalement élevés au cours d’une année.
+
+### Les conditions à remplir pour bénéficier du lissage de la CEHR
+
+En cas de revenus exceptionnellement élevés en année N, les contribuables peuvent bénéficier du lissage de la CEHR **s’ils réunissent 3 conditions cumulatives** :
+
+- Le revenu fiscal de référence du foyer ne doit pas avoir dépassé la tranche du barème de la CEHR à 0% en année N-2 et en année N-1 (250 000 € ou 500 000 €, selon la situation matrimoniale)
+- Le revenu fiscal de référence de l’année N doit être au moins 1.5 x plus élevé que la moyenne des revenus fiscaux des années N-2 et N-1
+- En N-2 et N-1, les revenus du foyer imposables à l’Impôt sur le revenu devaient représenter au moins 50% des revenus de même nature du revenu fiscal de référence en année N
+
+### L’application du lissage de la CEHR
+
+Si les conditions sont remplies, le montant de la CEHR sera déterminé de la manière suivante :
+
+1. Calculer la moyenne des revenus fiscaux de référence N-1 et N-2
+2. Calculer la différence entre ce montant et le revenu fiscal de référence de l'année N
+3. Ajouter la moitié de ce montant à la moyenne calculée au 1.
+4. Appliquer le barème de la CEHR à ce montant
+5. Multiplier par 2 le montant ainsi obtenu
+
+## Exemples chiffrés
+
+<p className="underline bodytext">Exemple n°1 - Le cas du contribuable célibataire</p>
+
+Prenons le cas d’une personne célibataire ayant un revenu imposable de 100 000 € annuels et percevant 200 000 € de dividendes. Son revenu fiscal de référence est de 300 000 €, car il faut ajouter au revenu imposable le montant du dividende brut.
+
+Le montant de la CEHR sera de 1 500 € :
+
+- 0 € sur la tranche allant de 0 € de revenu fiscal de référence à 250 000 €
+- 1 500 € sur la tranche allant de 250 000 € jusqu’au revenu fiscal de référence, car 300 000 - 250 000 = 50 000 et 50 000 € x 3% = 1 500
+
+<p className="underline bodytext">Exemple n°2 - Le cas des contribuables mariés ou pacsés</p>
+
+Prenons le cas d’un couple marié dont chaque époux perçoit 600 000 € de revenus imposables. Le revenu fiscal de référence donc est de 1 200 000 €.
+
+Le montant de la CEHR sera de 23 000 € :
+
+- 0 € sur la tranche allant de 0 € de revenu fiscal de référence à 500 000 €
+- 15 000 € sur la tranche allant de 500 000 €  de revenu fiscal de référence jusqu’à 1 000 000 €, car 1 000 000 - 500 000 = 500 000 et 500 000 x 3% = 15 000
+- 8 000 € sur la tranche allant de 1 000 000 € de revenu fiscal de référence jusqu’au revenu fiscal de référence, car 1 200 000 - 1 000 000 = 200 000 et 200 000 x 4% = 8 000
+
+**On voit donc que le taux de la CEHR est plus élevé sur les tranches élevées du revenu fiscal de référence.**
+
+## Comment la CEHR est-elle déclarée et payée ?
+
+Une fois la déclaration de revenu effectuée, le service des impôts calcule le montant de CEHR dont vous êtes redevable.
+
+Le paiement de la CEHR a lieu l’année suivante, en même temps que la régularisation d’impôt sur les revenus de l’année antérieure.
+
+**La CEHR n’est donc pas soumise au prélèvement à la source.**
+
+## Faites une simulation
+
+**Vous souhaitez savoir si vous allez devoir la CEHR et de combien vont être vos impôts ?** Nous avons justement développé un simulateur qui vous permettra de renseigner tous vos revenus récurrents et de calculer le montant de vos impôts et de votre CEHR.
+
+<CustomImg src={CEHRSimul} className="mx-auto w-full sm:w-[95%] max-w-[600px]"  my="my-10" caption="Si vous devez la CEHR, vous apercevrez qu'elle figure parmi vos impôts. Vous pourrez également en connaître le montant exact dans la partie ASPECTS FISCAUX." alt="Gif illustrant l'utilisation du simulateur" unoptimized/>
+
+<GoToSimulatorButton />

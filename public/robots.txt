@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /a-propos
+Disallow: /contact
+Disallow: /mentions-legales
+Disallow: /*?*saved-search=
+
+Sitemap: https://decodage-fiscal.fr/sitemap.xml

@@ -1,0 +1,263 @@
+import {
+    CustomImg,
+    InnerLink,
+    Underline,
+    UnderlineP,
+    CalculationLine,
+    SmallArrowLine,
+    OrangeH3,
+    NumberTable
+} from '../reusable-components'
+
+import {SARLPreForm} from '../specific-components/SARLPreForm'
+
+import corporateTaxScale from '@/public/bareme-is.png'
+
+export const meta = {
+    title: 'Simulateur EURL : revenu net, dividendes, retraite, fonctionnement',
+    articleTitle:
+        'Simulateur EURL : revenu net, dividendes, retraite, fonctionnement',
+    outsideTitle:"Le fonctionnement de l'EURL (rémunération, cotisations, dividendes, retraite)",
+    subtitle: (
+        <>
+            <p>
+                Découvrez toutes les subtilités juridiques concernant l&apos;EURL et calculez le montant de votre revenu net, de vos dividendes, de votre retraite estimée et de vos cotisations en EURL (IS / IR).
+            </p>
+        </>
+    ),
+    date: '23/10/2023',
+    description:
+        "Découvrez toutes les subtilités juridiques concernant l'EURL et calculez le montant de votre revenu net, de vos dividendes, de votre retraite estimée et de vos cotisations en EURL (IS / IR).",
+    keywords: [
+        'dividendes',
+        'TNS',
+        'SARL',
+        'EURL',
+        'optimisation',
+        'retraite',
+        'statut',
+        'barème',
+        'flat tax',
+    ],
+    tocDepth:3,
+    socialFormsArr: ['SARL'],
+    topicalRanking: 2
+}
+
+## Qu’est-ce qu’une EURL ?
+
+L’EURL (Entreprise Unipersonnelle à Responsabilité Limitée) est tout d’abord une **vraie société**, et non pas une Entreprise, bien qu’elle ait été injustement nommée de la sorte. Plus précisément, il s’agit d’une **SARL** (Société À Responsabilité Limitée) qui a pour particularité de ne compter **qu’un seul associé**.
+
+Le dirigeant de l’EURL s’appelle **le “gérant”**, et il est très souvent également l’unique associé de la société.
+
+La SARL (ou EURL) est un type de société qui existe depuis longtemps en France (plus de 100 ans) et qui est **particulièrement adapté aux activités économiques de taille modeste** (allant d'un à quelques salariés).
+
+Puisque l’EURL est une société, elle dispose d’une **personnalité juridique à part entière**, distincte de celle de l’associé (et gérant). De ce fait, c’est la société elle-même qui conclut des contrats, génère du bénéfice, dispose d’un compte bancaire professionnel, et non le gérant, qui dispose par ailleurs d’un patrimoine propre.
+
+## Simulateur EURL
+
+<OrangeH3>Calculez le montant de votre revenu net, de vos dividendes nets, de votre retraite estimée et de vos cotisations.</OrangeH3>
+
+<SARLPreForm/>
+
+## Fonctionnement de l’EURL
+
+### Le choix du régime fiscal : IS ou IR ?
+
+#### Quelle est la différence entre une EURL à l’IS et une EURL à l’IS ?
+
+Par défaut, l’EURL est à l’Impôt sur le Revenu (IR), sauf si une option est faite pour qu’elle soit à l’Impôt sur les Sociétés (IS).
+
+**La principale différence entre l’EURL à l’IR et l’EURL à l’IS est la personne qui devra payer l’impôt**.
+
+Si **aucune option n’est faite pour l’IS**, l’EURL restera à l’IR et son résultat net, tel qu’il figure au bilan, sera imposé au nom du gérant, sur sa propre déclaration fiscale d'<InnerLink href="/blog/tout-comprendre-a-l-impot-sur-le-revenu-ir-avec-simulation">Impôt sur Revenu (IR)</InnerLink>.
+
+*On dit dans ce cas que l’EURL n’a pas de personnalité fiscale, car elle ne paie aucun impôt*.
+
+<Underline>NB</Underline>: Le gérant d'EURL à l'IR paie de l'impôt sur les bénéfices de la société, même au cas où il décide de finalement laisser le bénéfice dans les comptes de sa société.
+
+Au contraire, **si une option est faite pour l'IS**, le résultat fiscal de l'EURL sera imposé à l’Impôt sur les Sociétés (IS), au nom de l’EURL elle-même. Le gérant devra alors mettre en place une stratégie de rémunération pour récupérer la richesse créée.
+
+L’autre différence découle de la première : **si une EURL est à l’IR, il n’y a ni rémunération, ni dividende possible**, car la totalité du résultat est déjà récupérée par le gérant. Au contraire, si une EURL est à l’IS, l’associé unique pourra mettre en place une stratégie de rémunération ou dividendes pour récupérer la richesse créée.
+
+#### Entre IS et IR, quel régime d’imposition choisir ?
+
+Les deux régimes d’imposition présentent des avantages et des inconvénients.
+
+**Le seul avantage de l’EURL à l’IR est sa simplicité** : il n’y a qu’un seul contribuable, qu’une seule déclaration, et aucune formalité fiscale ou sociale supplémentaire. _Les comptes annuels (bilan) doivent tout de même être établis_.
+
+**Les avantages de l’EURL à l’IS sont nombreux** :
+
+- Tout comme les salariés, le gérant d’EURL à l’IS bénéficie automatiquement d’un **abattement de 10% sur sa rémunération au titre des frais professionnels**. Cela signifie que sa rémunération imposable sera réduite de 10%. _L’idée derrière ce mécanisme est que l’activité de gérant génère ses propres charges qui doivent être déduites pour le calcul de l’IR._
+- Le gérant d’EURL à l’IS a la **possibilité de garder des bénéfices dans les comptes de la société sans devoir payer directement de l’impôt sur le revenu**, contrairement à l’EURL à l’IR où le résultat est automatiquement taxé à l’impôt sur le revenu des personnes physiques. Ceci permet à l'EURL à l'IS de réaliser des investissements.
+- Comme le gérant d'EURL à l'IS décide de sa rémunération et de ses dividendes, il peut mettre en place **une stratégie de rémunération et de dividendes optimisée**, pour maximiser son revenu net et ses droits pour la retraite.
+
+En définitive, l’option pour l’IS présente de sérieux avantages.
+
+### La protection sociale en EURL
+
+#### L’affiliation à la sécurité sociale des indépendants (SSI)
+
+En matière de SARL/EURL, on distingue le gérant majoritaire (qui possède plus de 50% du capital de la société), du gérant qui n’est que minoritaire (ou égalitaire) au capital de la société.
+
+Tandis que le gérant majoritaire est affilié à la Sécurité Sociale des Indépendants (SSI) et cotise donc comme un travailleur indépendant, le gérant minoritaire (ou égalitaire) est affilié au régime général de la sécurité sociale et cotise comme un salarié.
+
+En EURL, le gérant est **automatiquement affilié à la Sécurité Sociale des Indépendants (SSI)**, car étant l'unique associé, il a la qualité de gérant majoritaire.
+
+#### Les droits à la protection sociale du gérant d'EURL
+
+En EURL, le gérant bénéficie d’une protection sociale complète grâce aux cotisations qu’il paie au régime de sécurité sociale des indépendants.
+
+Il bénéficie ainsi :
+
+- de la **couverture de ses frais de santé**
+- de la **protection contre les risques de la vie** (arrêt-maladie, invalidité, décès)
+- de la **retraite** (de base et complémentaire)
+- des **congés de maternité / paternité**
+- de **droits aux allocations familiales**
+
+Il ne cotise toutefois pas pour le chômage et ne peut donc bénéficier de l’Aide de Retour à l’Emploi (ARE).
+
+Par ailleurs, on considère généralement que les travailleurs affiliés à la sécurité sociale des indépendants ne sont pas aussi bien traités que les salariés en ce qui concerne  <InnerLink href="/blog/retraite-du-freelance-guide-complet-avec-simulateur-par-statut">les droits pour la retraite</InnerLink>.
+
+_Cette affirmation doit toutefois être nuancée : il est en effet possible d’atteindre des revenus plus élevés en tant que travailleur indépendant qu’en tant que salarié, grâce à un niveau plus faible de cotisations, ce qui permet d’effacer partiellement ou totalement cette différence en cotisant davantage._
+
+#### Quelles sont les sommes soumises à cotisations ?
+
+Si l’EURL est à l’IR, la base qui va servir au calcul des cotisations est **le résultat net** de l’EURL, tel qu’il figure sur le bilan.
+
+Si l’EURL est à l’IS, la base qui va servir au calcul des cotisations est constituée de **la rémunération** et d'**une partie des dividendes** (voir plus bas).
+
+#### Le taux et le paiement des cotisations sociales en EURL
+
+Les cotisations sociales sont prélevées soit mensuellement soit trimestriellement, en fonction du dernier revenu connu par l’Urssaf. Tout comme avec le prélèvement à la source, si le revenu annuel s’avère plus élevé ou moins élevé que celui de l’année précédente, il y aura régularisation des cotisations payées, avec soit remboursement soit rappel de cotisations.
+
+Le taux des cotisations sociales est d’environ 45% du revenu net (ou 30% du revenu brut).
+
+<Underline>A noter</Underline> : le régime de sécurité sociale des indépendants prévoit un **montant minimal forfaitaire de cotisations qui est toujours dû**, même en l'absence de revenu. **En 2023, les cotisations minimales sont de 1 162 €**. Le fait de payer des cotisations minimales peut sembler pénalisant en cas de chute d'activité. Toutefois, cela permettra d'assurer au gérant un nombre minimum de trimestres validés pour la retraite (3 par an) ainsi que la prise en charge de ses frais de santé.
+
+
+### Le calcul des impôts en EURL à l’IR
+
+Lorsque l’EURL est à l’IR, il suffit de reporter le montant du résultat net de l'EURL tel qu'il figure au bilan sur la déclaration de revenu du gérant. L'impôt sera calculé par application des tranches du barème de l'impôt sur le revenu.
+
+
+### Le calcul des impôts en EURL à l’IS
+
+#### Premier niveau d’imposition : le calcul de l’Impôt sur les Sociétés (IS)
+
+**Il faut d’abord déterminer le résultat fiscal qui sera soumis à l’IS, puis calculer l’IS lui-même.**
+
+Pour obtenir le montant du <Underline>résultat fiscal</Underline> qui sera soumis à l'IS, il faut procéder de la sorte :
+
+<CalculationLine>Résultat fiscal = Recettes - Charges - Rémunération nette avant impôt - Cotisations globales</CalculationLine>
+
+Une fois que l'on connaît le montant du résultat fiscal, le <Underline>montant de l'IS</Underline> s'obtient en appliquant les taux qui figurent ci-dessous.
+
+<CustomImg src={corporateTaxScale} alt="Tranches du barème de l'impôt sur les sociétés (IS)"/>
+
+Pour calculer l'IS, il faut appliquer au résultat fiscal le taux correspondant à chaque tranche dans laquelle il se situe.
+
+<UnderlineP className="text-center">Exemple chiffré</UnderlineP>
+
+**Pour un résultat fiscal en l’EURL à l’IS de 45 000 €, le montant de l’IS sera de 7 000 €.**
+
+<SmallArrowLine><span className="font-semibold italic">Sur la tranche de résultat allant de 0 € à 42 500 € : 6 375 €</span> </SmallArrowLine>
+
+<CalculationLine>6 375 = 42 500 x 15%</CalculationLine>
+
+<SmallArrowLine><span className="font-semibold italic">Sur la tranche de résultat allant de 42 500 € au résultat fiscal : 625 €</span> </SmallArrowLine>
+
+<CalculationLine>625 = (45 000 - 42 500) x 25%</CalculationLine>
+
+<SmallArrowLine><span className="font-semibold italic">Total : 7 000 €</span></SmallArrowLine>
+<CalculationLine>7 000 = 625 + 6 375</CalculationLine>
+
+#### Second niveau d’imposition : le calcul de l’Impôt sur le Revenu du gérant (IR)
+
+La rémunération du gérant majoritaire sera **soumise à <InnerLink href="/blog/tout-comprendre-a-l-impot-sur-le-revenu-ir-avec-simulation"> l'Impôt sur Revenu (IR)</InnerLink> dans les conditions normales** et pourra bénéficier de l’abattement forfaitaire de 10% au titre des frais professionnels.
+
+#### L’imposition des dividendes en EURL
+
+##### L'imposition différenciée en fonction du capital social
+
+Le régime d’imposition des dividendes en EURL à l’IS est un peu plus compliqué que pour les autres sociétés. Il dépend du montant du capital social, du compte courant d'associé et des primes d'émission.
+
+Dans un régime classique d'imposition des dividendes, par exemple en SASU, les dividendes sont taxés à **un taux global et fixe de 30%**, constitué d'une partie fiscale (12.8% de PFU, pour Prélèvement Forfaitaire Unique) et d'une partie sociale (17.2% de prélèvements sociaux).
+
+En EURL, seule la partie des dividendes qui est inférieure à 10% du capital social (ainsi que du compte courant d'associé et des primes d'émission) suivra le régime classique d'imposition des dividendes. Pour le reste, les dividendes seront bien taxés au PFU de 12.8%, mais pas aux prélèvements sociaux de 17.2%. A la place, les cotisations sociales habituellement prélevées sur la rémunération s'appliqueront.
+
+##### Faut-il se verser des dividendes en EURL ?
+
+On pourrait croire ici que les dividendes en EURL ne sont pas une option intéressante, notamment parce que les cotisations de la sécurité sociale des indépendants s'appliquent, et que leur taux moyen est d'environ 45%.
+
+En réalité, les cotisations sociales sur dividendes permettent bien souvent d'optimiser le revenu net, tout en maintenant des droits pour la retraite.
+
+**Comment expliquer ce phénomène ?** Les dividendes du gérant majoritaire permettent de limiter le montant des prélèvements obligatoires (impôts et cotisations) ce qui peut significativement augmenter le revenu net du gérant, en particulier sur les tranches élevées du barème de l'Impôt sur le Revenu (IR).
+
+Ceci s'explique principalement par deux facteurs :
+
+1. Tout d'abord, **en limitant sa rémunération, le gérant majoritaire limite mécaniquement le montant de l'IR** sur sa rémunération. Or, les taux de l'IR peuvent aller jusqu'à 45%.
+
+2. Lorsque c'est l'EURL qui prend en charge le surplus de cotisations générées par les dividendes, cela a deux conséquences directes. Comme les cotisations sur dividendes sont incluses dans les cotisations déductibles pour la détermination de l'Impôt sur les Sociétés (IS), cela **limitera d'abord la charge d'IS**, dont la tranche à 15% va jusqu'à 42 500 €. Ensuite, comme les cotisations sont déductibles du résultat de l'EURL, cela a pour effet de **réduire le montant des dividendes imposables**. Les dividendes ainsi réduits supporteront un montant fixe d'IR de 12.8% seulement (le PFU), ainsi que les cotisations sociales.
+
+_**In fine, le gérant majoritaire qui aura décidé de se verser des dividendes disposera souvent d'un <Underline>revenu avant impôt plus faible</Underline> que s'il avait privilégié la solution "tout rémunération", mais comme il sera beaucoup moins taxé, il bénéficiera également souvent d'un <Underline>revenu net après impôt plus important</Underline>** (voir exemples ci-dessous)._
+
+Pour vérifier si les dividendes sont intéressants dans votre cas, <InnerLink>réalisez une simulation sur notre simulateur de statuts juridiques</InnerLink>.
+
+<h5 className="text-2xl font-semibold uppercase leading-loose text-center mt-10 mb-8">Exemples chiffrés (dividendes)</h5>
+
+Pour vérifier l'intérêt des dividendes pour un gérant majoritaire, nous étudierons successivement le cas d'une EURL avec une capacité de rémunération de 150 000 €, dont le gérant (un célibataire, sans enfant) décide d'allouer toute la capacité de rémunération de l'EURL à sa propre rémunération (exemple 1), puis décide d'allouer 50% à sa rémunération et le reste en dividendes (exemple 2).
+
+<p>_Afin d'étudier l'impact concret de l'assujettissement des dividendes aux cotisations sociales, il sera considéré que l'EURL a un capital social d'1 €, ce qui signifie que les dividendes supporteront quasi-exclusivement les cotisations sociales, et non les prélèvements sociaux à hauteur de 17.2%._</p>
+
+<p className="text-xl font-semibold uppercase leading-loose text-center mt-8 mb-6">EXEMPLE 1 (rémunération : 100%, dividendes : 0%)</p>
+
+<div className="flex gap-8 justify-center mb-6 items-center flex-col 3xl:flex-row w-full sm:w-10/12 mx-auto max-w-[500px] 3xl:w-full 3xl:max-w-none">
+<NumberTable  title={`L'EURL`} headers={["Ligne comptable", "Montant"]} data={[
+    { label: "Capital social", value: "1 €", style: "italic font-light bg-slate-200" },
+    { label: "Capacité de rémunération", value: "150 000 €" },
+    { label: "Cotisations", value: "42 533 €", style: "font-semibold text-sky-800" },
+    { label: "Rémunération", value: "107 467 €", style:"font-bold" },
+    { label: "Résultat fiscal", value: "0" },
+    { label: "Impôt sur les Sociétés (IS)", value: "0" },
+    { label: "Distribution de dividendes", value: "0", style:"font-bold" },
+  ]}/>
+
+<NumberTable  title={`Le Gérant`} headers={["Ligne comptable", "Montant"]} data={[{label:"Rémunération", value:"107 467 €", style:"font-bold"}, {label:"Revenu imposable (TMI : 41%)", value:"100 383 €"}, {label:"Impôt sur le Revenu (IR)", value:"26 108 €"}, { label: "Distribution de dividendes", value: "0", style:"font-bold" },{label:"Revenu net", value:"81 359 €", style:"font-extrabold text-green-700"}]}/>
+
+</div>
+
+<p>_Dans cet exemple, le gérant dispose d'un revenu net avant impôt d'environ 107 500 € (rémunération), cotise environ 42 500 € à la sécurité sociale des indépendants, et bénéficie d'un revenu net après impôt d'environ 81 400 €._</p>
+
+<p className="text-xl font-semibold uppercase leading-loose text-center mt-8 mb-6">EXEMPLE 2 (rémunération : 50%, dividendes : 50%)</p>
+
+
+<div className="flex gap-8 justify-center mb-6 items-center flex-col 3xl:flex-row w-full sm:w-10/12 mx-auto max-w-[500px] 3xl:w-full 3xl:max-w-none">
+<NumberTable title={`L'EURL`} headers={["Ligne comptable", "Montant"]} data={[
+    { label: "Capital social", value: "1 €", style: "italic font-light bg-slate-200" },
+    { label: "Capacité de rémunération", value: "150 000 €" },
+    { label: "Cotisations", value: "41 321 €", style: "font-semibold text-sky-800" },
+    { label: "Rémunération", value: "75 000 €", style:"font-bold" },
+    { label: "Résultat fiscal (TMI : 15%)", value: "33 679 €" },
+    { label: "Impôt sur les Sociétés (IS)", value: "5 052 €" },
+    { label: "Distribution de dividendes", value: "28 629 €", style:"font-bold" },
+  ]}/>
+
+<NumberTable title={`Le Gérant`} headers={["Ligne comptable", "Montant"]} data={[{label:"Rémunération", value:"75 000 €", style:"font-bold"}, {label:"Revenu imposable (TMI : 30%)", value:"71 040 €"}, {label:"Impôt sur le Revenu (IR)", value:"14 906 €"}, { label: "Distribution de dividendes", value: "28 629 €", style:"font-bold" }, { label: "IR sur dividendes (PFU à 12.8%)", value: "3 665 €" }, {label:"Revenu net", value:"85 059 €", style:"font-extrabold text-green-700"}]}/>
+</div>
+
+<p className="mb-4">_Dans cet exemple, le gérant dispose d'un revenu net avant impôt d'environ 103 600 € (rémunération + dividendes), cotise environ 41 300 € à la sécurité sociale des indépendants, et bénéficie d'un revenu net après impôt d'environ 85 000 €._</p>
+
+On le voit, à partir d'un certain niveau de rémunération, les dividendes en EURL permettent d'augmenter significativement le revenu net du gérant, pour un niveau de cotisation très proche.
+
+
+### Le cumul de l’EURL avec certaines aides
+
+Les revenus retirés de l'activité en EURL ont une nature professionnelle, qu’il s’agisse des revenus en EURL à l’IR (le revenu net) ou en EURL à l’IS (la rémunération + les dividendes). En conséquence, le gérant d’EURL aura souvent des **ressources trop importantes** pour bénéficier de certaines aides.
+
+C’est notamment le cas de l’<InnerLink href="/blog/tout-comprendre-a-l-acre-test-d-eligibilite-simulation-conditions-demarches">ACRE</InnerLink>, où l’exonération n’est possible qu'avec un revenu inférieur au plafond annuel de la sécurité sociale, fixé à 43 992 € en 2023.
+
+Quant à l’Aide au Retour à l’Emploi (ARE) versée par Pôle emploi, elle fera l’objet d’une double limite, rendant la majorité des gérants d'EURL inéligibles :
+- 70% du revenu professionnel retiré par le gérant sera déduit de l’allocation-chômage
+- la somme du revenu professionnel retiré par le gérant et de l’allocation-chômage ne pourra dépasser le salaire antérieur ayant permis de générer des droits au chômage

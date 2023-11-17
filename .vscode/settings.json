@@ -1,0 +1,10 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "javascript.preferences.importModuleSpecifierEnding": "minimal",
+    "typescript.preferences.importModuleSpecifierEnding": "minimal",
+    "javascript.preferences.jsxAttributeCompletionStyle": "auto",
+    "typescript.preferences.jsxAttributeCompletionStyle": "braces",
+    "[css]": {
+        "editor.defaultFormatter": null
+    }
+}

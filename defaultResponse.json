@@ -1,0 +1,249 @@
+{
+    "person": {
+        "synthesis": {
+            "revenueEntities": [
+                {
+                    "title": "La Micro-Entreprise",
+                    "isYearly": false,
+                    "lines": [
+                        {
+                            "values": {
+                                "title": "Chiffre d'affaires",
+                                "yearly": "-- €",
+                                "monthly": "-- €"
+                            },
+                            "style": "",
+                            "bubbleContent": "",
+                            "bubbleInfoLink": "",
+                            "includedTaxesSubtitleArr": []
+                        },
+                        {
+                            "values": {
+                                "title": "- Charges réelles",
+                                "yearly": "-- €",
+                                "monthly": "-- €"
+                            },
+                            "style": "",
+                            "bubbleContent": "",
+                            "bubbleInfoLink": "",
+                            "includedTaxesSubtitleArr": []
+                        },
+                        {
+                            "values": {
+                                "title": "- Cotisations sociales",
+                                "yearly": "-- €",
+                                "monthly": "-- €"
+                            },
+                            "style": "",
+                            "bubbleContent": "",
+                            "bubbleInfoLink": "",
+                            "includedTaxesSubtitleArr": []
+                        },
+                        {
+                            "values": {
+                                "title": "- Impôt",
+                                "yearly": "-- €",
+                                "monthly": "-- €"
+                            },
+                            "style": "",
+                            "bubbleContent": "",
+                            "bubbleInfoLink": "",
+                            "includedTaxesSubtitleArr": []
+                        },
+                        {
+                            "values": {
+                                "title": "Revenu net",
+                                "yearly": "-- €",
+                                "monthly": "-- €"
+                            },
+                            "bubbleContent": "",
+                            "bubbleInfoLink": "",
+                            "style": "bold",
+                            "includedTaxesSubtitleArr": []
+                        }
+                    ]
+                }
+            ],
+            "pension": {
+                "quarters": "--",
+                "monthly": "-- €",
+                "yearly": "-- €"
+            }
+        },
+        "graphData": {
+            "base": {
+                "total": "120 000 €",
+                "negativePercentage": 0,
+                "label": "Chiffre d'affaires"
+            },
+            "totalNetIncome": {
+                "total": "91 837 €",
+                "negativePercentage": 0.23469483041666672,
+                "label": "Revenu net"
+            },
+            "graphItems": [
+                {
+                    "id": "expenses",
+                    "total": "12 000 €",
+                    "label": "Charges",
+                    "percentage": 0.1
+                },
+                {
+                    "id": "contributions",
+                    "total": "14 880 €",
+                    "label": "Cotisations sociales",
+                    "percentage": 0.124
+                },
+                {
+                    "id": "proTax",
+                    "total": "1 283 €",
+                    "label": "Impôts",
+                    "percentage": 0.010694830416666665
+                },
+                {
+                    "id": "netProIncome",
+                    "total": "91 837 €",
+                    "label": "Revenu net",
+                    "percentage": 0.7653051695833333
+                }
+            ]
+        },
+        "contribBaseSAS": 0
+    },
+    "personD2": null,
+    "otherIncomes": null,
+    "generalInfo": [
+        {
+            "label": {
+                "categoryLabel": "Foyer",
+                "sealIconInfo": null
+            },
+            "data": {
+                "mainLines": [
+                    {
+                        "content": "Revenu net : --€",
+                        "style": {
+                            "fontWeight": 800,
+                            "fontSize": "1.125rem",
+                            "marginBottom": "0.25rem",
+                            "width": "100%",
+                            "textAlign": "center"
+                        }
+                    },
+                    {
+                        "content": "Célibataire"
+                    }
+                ],
+                "subcategories": [
+                    {
+                        "subcategoryLabel": "Aspects Fiscaux",
+                        "subcategoryLabelStyle": {
+                            "textTransform": "uppercase",
+                            "textDecorationLine": "underline",
+                            "fontWeight": 300,
+                            "textAlign": "center"
+                        },
+                        "subcategoryData": [
+                            {
+                                "content": "Revenu net imposable : -- €",
+                                "style": {
+                                    "fontWeight": 300,
+                                    "marginTop": ".25rem"
+                                }
+                            },
+                            {
+                                "content": "Impôt sur le Revenu (IR) : -- €",
+                                "style": {
+                                    "fontWeight": 300,
+                                    "marginTop": ".25rem"
+                                }
+                            },
+                            {
+                                "content": "Taux d'imposition : --%",
+                                "style": {
+                                    "fontWeight": 300,
+                                    "marginTop": ".25rem"
+                                }
+                            },
+                            {
+                                "content": "Tranche Marginale d'Imposition (TMI) : --%",
+                                "style": {
+                                    "fontWeight": 300,
+                                    "marginTop": ".25rem"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "label": {
+                "categoryLabel": "Déclarant 1",
+                "sealIconInfo": {
+                    "iconColor": "#16a34a",
+                    "iconLabel": "Micro-Entreprise"
+                }
+            },
+            "data": {
+                "mainLines": [
+                    {
+                        "content": "Revenu net : -- €",
+                        "style": {
+                            "fontWeight": 800,
+                            "fontSize": "1.125rem",
+                            "marginBottom": "0.25rem",
+                            "width": "100%",
+                            "textAlign": "center"
+                        }
+                    },
+                    {
+                        "content": "Chiffre d'affaires : -- €",
+                        "style": {
+                            "fontWeight": 700
+                        }
+                    },
+                    {
+                        "content": "0 € de TJM sur 43 semaines / an",
+                        "style": {
+                            "fontWeight": 300,
+                            "fontStyle": "italic",
+                            "width": "100%",
+                            "textAlign": "center"
+                        }
+                    },
+                    {
+                        "content": "Charges : -- €"
+                    }
+                ],
+                "subcategories": [
+                    {
+                        "subcategoryLabel": "Retraite estimée",
+                        "subcategoryLabelStyle": {
+                            "textTransform": "uppercase",
+                            "textDecorationLine": "underline",
+                            "fontWeight": 300,
+                            "textAlign": "center"
+                        },
+                        "subcategoryData": [
+                            {
+                                "content": "Montant brut : -- €",
+                                "style": {
+                                    "fontWeight": 300,
+                                    "marginTop": ".25rem"
+                                }
+                            },
+                            {
+                                "content": "Validation de trimestres : --",
+                                "style": {
+                                    "fontWeight": 300,
+                                    "marginTop": ".25rem"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

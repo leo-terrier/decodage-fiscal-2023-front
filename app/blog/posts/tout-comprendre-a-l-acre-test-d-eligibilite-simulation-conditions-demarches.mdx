@@ -1,0 +1,171 @@
+import {
+    CustomImg,
+    Callout,
+    GoToSimulatorButton,
+    InnerLink,
+    Underline,
+    OrangeH3
+} from '../reusable-components'
+
+import AcreEligibilityForm from '../specific-components/AcreEligibilityForm'
+import ACREContributionAmount from '@/public/cotisations-avec-acre.png'
+import ACRERebateRealTaxScheme from '@/public/acre-taux-regime-reel.png'
+import AcreOptionGif from '@/public/acre-option.gif'
+
+export const meta = {
+    title: "Tout comprendre à l'ACRE : test d'éligibilité, simulation, conditions et démarches",
+    articleTitle:
+        "Tout comprendre à l'ACRE : test d'éligibilité, conditions et démarches, simulation",
+    outsideTitle:  "Tout comprendre à l'ACRE : test d'éligibilité, conditions et démarches",
+    subtitle: (
+        <>
+            <p>
+                L&apos;ACRE (l&apos;Aide à la Création ou à la Reprise d&apos;une
+                Entreprise) permet aux créateurs d&apos;entreprise de bénéficier d&apos;une réduction de cotisations sociales pendant leur première année d&apos;activité.
+            </p>
+            <p className="italic font-semibold extra-intro-p">
+                Découvrez les conditions d&apos;éligibilité de l&apos;ACRE, le montant de l&apos;exonération et les démarches pour bénéficier de l&apos;ACRE. Tester directement votre éligibilité à l&apos;ACRE et <InnerLink>calculez le montant global de vos charges sociales avec l&apos;ACRE</InnerLink>.
+            </p>
+        </>
+    ),
+    date: '19/09/2023',
+    description:
+        "Découvrez les conditions et démarches de l’ACRE ainsi que le montant de l'ACRE. Faites un test d'éligibilité à l'ACRE et calculez votre revenu net et vos cotisations avec l'ACRE.",
+    keywords: [
+        'cotisations',
+        'micro-social',
+        'aide',
+        'creation',
+        'chômage',
+    ],
+    socialFormsArr: ['ME'],
+    topicalRanking: 3
+}
+
+## Quelles sont les conditions à remplir pour demander l’ACRE ?
+
+### Les conditions d’éligibilité des créateurs d’entreprise au régime réel d’imposition
+
+Si vous n’avez pas choisi la Micro-Entreprise et que vous créez une activité économique nouvelle (peu importe le statut), **vous bénéficiez automatiquement de l’ACRE la première année sans condition ni formalité**. Il y a toutefois des plafonds de chiffre d’affaires à respecter pour pouvoir effectivement bénéficier de l’ACRE (voir section suivante).
+
+### Les conditions d’éligibilité pour les Micro-Entrepreneurs
+
+Pour bénéficier de l’ACRE, il faut tout d’abord être **<Underline>créateur d’entreprise</Underline>.** *Il n’est donc pas possible d’obtenir l’ACRE en cas de reprise de la même activité après une pause.*
+
+Par ailleurs, **le créateur de Micro-Entreprise ne doit <Underline>pas avoir bénéficié de l’ACRE au cours des trois années précédentes</Underline>**.
+
+Enfin, pour bénéficier de l’ACRE, **le créateur de Micro-Entreprise doit <Underline>se trouver dans l’une des 9 situations suivantes</Underline>** :
+
+- soit être <Underline>demandeur d’emploi indemnisé par Pôle emploi</Underline>
+- soit être <Underline>demandeur d’emploi non-indemnisé mais inscrit à Pôle emploi</Underline>
+- soit <Underline>bénéficier du RSA</Underline> ou de l’Allocation de Solidarité Spécifique (ASS)
+- soit <Underline>avoir entre 18 et 25 ans</Underline> (ou 29 ans si reconnu travailleur handicapé)
+- soit avoir moins de 30 ans et ne pas remplir les conditions d’activité antérieure pour bénéficier de l’indemnisation chômage
+- soit être salarié ou licencié d'une entreprise en sauvegarde de justice, en redressement judiciaire ou liquidation judiciaire et reprenant une entreprise
+- soit être sans emploi et avoir signé un contrat d’appui au projet d’entreprise - Cape
+- soit créer ou reprendre une entreprise dans un quartier prioritaire de la politique de la ville (QPPV)
+- soit toucher la prestation partagée d’éducation de l’enfant (PreParE)
+
+### Test d’éligibilité à l’ACRE (Micro-Entreprise)
+
+_Pour bénéficier de l'ACRE, vous devez remplir toutes ces conditions._
+
+<AcreEligibilityForm/>
+
+## De quelle exonération parle-t-on ?
+
+### Quelle est la nature des cotisations sociales exonérées ?
+
+L’ACRE permet d’être exonéré d’une partie des cotisations suivantes :
+
+- La cotisation maladie - maternité - invalidité - décès
+- La cotisation à l’assurance-vieillesse de base
+- La cotisation d’allocations familiales
+
+**L’ACRE n’a en général pas d’impact sur les droits des assurés** : le bénéficiaire reste affilié à l’assurance-maladie et cotise au titre de sa retraite complémentaire.
+
+**Quel est l’impact de l’ACRE sur le nombre de trimestres validés pour la retraite de base ?** Le nombre de trimestres validés peut être réduit pendant l’ACRE, car le montant cotisé à l'assurance-vieillesse se trouve diminué. Toutefois, lorsque le bénéficiaire est également indemnisé par Pôle emploi, les périodes d'indemnisation au chômage sont prises en compte et peuvent permettre d'atteindre 4 trimestres par an.
+
+
+### Le calcul de l'exonération pour les Micro-Entreprises (faites une simulation)
+
+L'ACRE permet donc d'économiser un montant important de cotisations la première année. Voici l’impact de l’ACRE sur les cotisations sociales, pour les principaux secteurs d’activités en Micro-Entreprise :
+
+<CustomImg
+    src={ACREContributionAmount}
+    alt='Montant des cotisations avec ACRE'
+    className={'w-[290px] sm:w-[400px] mx-auto'}
+    caption='Ces taux s’appliquent au chiffre d’affaires pour former le montant total des cotisations dues.'
+/>
+
+<Callout className="smaller-font-container">
+    Par ailleurs, lorsque le créateur de Micro-Entreprise remplit également <InnerLink href="/blog/simulateur-option-versement-liberatoire-conditions-avantages-demarches">les conditions du Versement Libératoire (ou VFL)</InnerLink>, il peut alors **cumuler ACRE et VFL pour ne payer que très peu d'impôts et cotisations**.
+    Le taux global de l'imposition (cotisations + impôts) ne s'élève qu'à **12.3% pour une activité de service** et **7.15% pour une activité d'achat-revente**, ce qui est très faible.
+</Callout>
+
+**Nous avons justement développé un simulateur simple et intuitif qui vous permettra en quelques clics de calculer vos cotisations avec ACRE et votre revenu net, selon les paramètres souhaités (ACRE, VFL, etc.).**
+
+<CustomImg src={AcreOptionGif} className="w-[92%] max-w-[400px] mx-auto" alt="Gif illustrant l'utilisation du simulateur"/>
+
+<GoToSimulatorButton />
+
+
+### Le calcul de l’exonération pour les créateurs d’entreprise au régime réel d’imposition
+
+Si le créateur d’entreprise ne bénéficie pas du statut de Micro-Entrepreneur, le montant de l'exonération dependra de son revenu net (ou de sa rémunération c'est un dirigeant de société).
+
+Vous trouverez ci-dessous un tableau récapitulatif du niveau d'exonération en fonction du revenu.
+
+<CustomImg
+    src={ACRERebateRealTaxScheme}
+    alt="Montant de l'exonération avec ACRE en régime réel d'imposition"
+    className={'w-[290px] sm:w-[450px] mx-auto'}
+    caption={"L'exonération ne concerne que certaines cotisations (voir section précédente)"}
+/>
+
+En régime réel d'imposition, des revenus trop élevés peuvent donc empêcher le créateur d'entreprise de pouvoir réellement bénéficier de l'ACRE.
+
+## Quelles sont les démarches à accomplir pour obtenir l’ACRE ?
+
+### Les démarches à accomplir pour les créateurs d’entreprise au régime réel d’imposition
+
+L’ACRE est automatiquement attribuée en cas d’immatriculation d’une entreprise ou d’une société nouvelle en régime réel d’imposition. Il n’y a donc aucune démarche à accomplir.
+
+### Les démarches à accomplir pour les créateurs de Micro-Entreprise
+
+Une fois la Micro-Entreprise créée, l’entrepreneur doit effectuer sa demande sur [autoentrepreneur.urssaf.fr](https://www.autoentrepreneur.urssaf.fr/) (le site de l’Urssaf qui gère les cotisations sociales de Micro-Entrepreneur).
+
+Le dossier de demande d’ACRE comporte :
+
+- un formulaire spécifique à remplir
+- un justificatif de création d’entreprise, téléchargeable après validation de l’immatriculation de votre Micro-Entreprise
+- un justificatif prouvant que les conditions requises pour l’ACRE sont remplies (ex : attestation Pôle emploi)
+
+### Quel est le délai à respecter pour demander l’ACRE en Micro-Entreprise ?
+
+L’Urssaf ne précise pas de délai particulier pour demander l’ACRE. Toutefois, il faut en faire la demande le plus rapidement possible, car l’exonération prend fin au maximum 12 mois après le démarrage de l’activité.
+
+
+## Quelle est la durée de l’ACRE ?
+
+L’ACRE démarre au début de l’activité nouvelle et prend fin à la fin du quatrième trimestre civil écoulé depuis l’immatriculation.
+
+Pour bénéficier de 4 trimestres d’ACRE (une année complète), il est conseillé d’immatriculer l’entreprise en début de trimestre civile (soit début janvier, soit début avril, soit début juillet, ou soit début octobre).
+
+## Peut-on cumuler l’ACRE avec d’autres aides ?
+
+<OrangeH3>Cumul ACRE et indemnisation chômage</OrangeH3>
+
+Il est possible de cumuler l’ACRE et l’indemnisation chômage. Toutefois, le montant de l’indemnisation chômage sera réduit à hauteur de vos revenus professionnels, indépendamment de l’ACRE.
+
+<OrangeH3>Cumul ACRE et RSA</OrangeH3>
+
+Comme pour l’indemnisation chômage, le RSA dépend de conditions de ressources. Il est donc possible de cumuler le RSA et l’ACRE, dès lors que vos revenus ne dépassent pas certains plafonds.
+
+<OrangeH3>Cumul ACRE et Versement Libératoire (ou VFL)</OrangeH3>
+
+Si vous remplissez également <InnerLink href="/blog/simulateur-option-versement-liberatoire-conditions-avantages-demarches">les conditions du Versement Libératoire (ou VFL)</InnerLink>, il est tout à fait possible de cumuler ACRE et VFL, ce qui permet de réduire significativement le montant de vos charges.
+
+<OrangeH3>Cumul ACRE et ARCE</OrangeH3>
+
+Il est possible de cumuler l’ACRE et l’ARCE (toucher 60% de vos droits à l’indemnisation chômage en deux versements).
